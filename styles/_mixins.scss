@@ -1,0 +1,39 @@
+@mixin theme-header-footer {
+  color: $color-text-light;
+  background: linear-gradient(
+      135deg,
+      $color-secondary 0%,
+      $color-secondary-dark 25%,
+      $color-secondary 50%,
+      $color-secondary-dark 75%,
+      $color-secondary 100%
+    ),
+    linear-gradient(
+      45deg,
+      $color-secondary-dark 0%,
+      $color-secondary 25%,
+      $color-secondary-dark 50%,
+      $color-secondary 75%,
+      $color-secondary-dark 100%
+    );
+  a {
+    color: $color-text-light;
+    text-decoration: none;
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
+
+@mixin theme-main {
+  color: $color-text;
+  background-color: $color-bg-main;
+  a:not(.btn) {
+    color: $color-primary-light;
+    text-decoration: none;
+    &:hover {
+      color: $color-primary-dark;
+      text-decoration: underline;
+    }
+  }
+}

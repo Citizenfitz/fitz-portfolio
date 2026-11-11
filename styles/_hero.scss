@@ -1,0 +1,66 @@
+.hero {
+  width: 100%;
+  background-color: $color-bg-header;
+  color: $color-text-light;
+  text-align: center;
+  min-height: 70vh;
+  @media (max-width: $breakpoint-sm) {
+    min-height: 60vh;
+  }
+  // margin-bottom: 20px;
+  @include fluid-space("lg", margin-bottom);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    url("img/cf-hero.webp");
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid $color-text-accent;
+  position: relative;
+  &__container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__header {
+    @include fluid-size("pythonic");
+    line-height: 1.1em;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+    color: $color-primary-lightest;
+    font-family: $font-header;
+  }
+  &__subheader {
+    // font-size: $font-size-xl;
+    @include fluid-size("h5");
+    text-transform: uppercase;
+    font-weight: $font-weight-regular;
+    margin-top: -10px;
+    color: $color-text-accent-hover;
+    font-family: $font-body;
+  }
+}
+
+// .hero {
+//   color: $color-text-light;
+//   background-color: $color-accent-dark;
+//   border-color: $color-accent-light;
+//   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+//     url("img/cf-hero.png");
+//   background-size: cover;
+//   background-position: center;
+//   min-height: 80vh;
+//   padding: $spacing-lg $spacing-md;
+//   border-bottom: 6px solid;
+//   margin-top: -64px;
+//   display: flex;
+//   align-items: flex-end;
+//   @include tablet {
+//     margin-top: -16px;
+//     min-height: 50vh;
+//     align-items: center;
+//   }
+// }

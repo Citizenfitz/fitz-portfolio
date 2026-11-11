@@ -1,0 +1,16 @@
+// Import utilities first
+@import "variables";
+@import "mixins";
+
+// Base styles
+@import "base";
+
+// Components
+@import "header-and-footer";
+@import "hero";
+
+// pages
+@import "portfolio";
+
+// utilities - last for specificity
+@import "utilities";

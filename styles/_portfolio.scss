@@ -1,0 +1,92 @@
+// Portfolio Items
+.portfolio {
+  &__section {
+    // margin-bottom: $spacing-lg;
+    @include fluid-space("giant", margin-bottom);
+  }
+
+  &__header-divider {
+    font-family: $font-body;
+    text-align: center;
+    @include fluid-space("xl", margin-bottom);
+    @include fluid-size("h5");
+    text-transform: uppercase;
+    display: none;
+  }
+
+  &__project-meta {
+    b,
+    strong {
+      color: $color-primary;
+    }
+  }
+
+  &__project-summary {
+    @include fluid-space("xs", padding-block);
+    @include fluid-space("sm", padding-inline);
+    @include fluid-space("md", margin-bottom);
+    background: $color-primary-lightest;
+    @include fluid-size("base");
+    border-radius: 8px;
+  }
+
+  &__project {
+    // margin-bottom: $spacing-lg;
+    @include fluid-space("giant", margin-bottom);
+    line-height: $line-height-tight;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $spacing-md;
+    // margin-bottom: $spacing-md;
+    @include fluid-space("xxl", margin-bottom);
+
+    &--half {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $breakpoint-md) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__project-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &__project-image-figure {
+    // margin-bottom: $spacing-md;
+    @include fluid-space("xxl", margin-bottom);
+
+    &--600 {
+      max-width: 600px;
+      // margin-bottom: $spacing-sm;
+      @include fluid-space("sm", margin-bottom);
+    }
+  }
+
+  &__project-image-figcaption {
+    // font-size: $font-size-xs;
+    @include fluid-size("xs");
+    color: $color-primary;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    // margin: $spacing-xs 0 0 0;
+    @include fluid-space("xs", margin-top);
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    text-align: center;
+
+    @media (max-width: $breakpoint-md) {
+      // font-size: $font-size-sm;
+      // @include fluid-size("sm"); // no longer needed – fluid handles scaling
+    }
+  }
+}

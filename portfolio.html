@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Citizen Fitz</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-main">
+        <div class="nav-container">
+          <a href="index.html" class="nav-logo">Citizen Fitz</a>
+          <button class="nav-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-menu">
+            <li><a href="launchworks.html">LaunchWorks</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li>
+              <a
+                href="https://calendly.com/fitzaco"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Book a Call&nbsp;
+                <i
+                  class="fa-solid fa-up-right-from-square"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="main-content__section">
+        <div class="section-inner">
+          <h1 class="h1">Portfolio</h1>
+          <p>
+            <b class="dropcap"
+              ><span class="dropcap__letter">L</span>ooking for a contract or
+              long-term hire?</b
+            >
+            I specialize in building React applications for federal agencies and
+            enterprise systems. I've been shipping accessible, maintainable
+            frontends for 20+ years, from HRSA's multi-site Angular platform to
+            CPSC's internal modernization system. I specialize in 508 compliance
+            implementation, legacy system refactoring, and translating fuzzy
+            stakeholder requirements into highly usable solutions built with
+            clean, scalable code.
+          </p>
+
+          <h2 class="h2">Technical Capabilities</h2>
+          <ul class="portfolio__project-meta-list">
+            <li>
+              <b>Frontend Engineering:</b> React, TypeScript, modern JavaScript
+              (ES6+); scalable component architecture
+            </li>
+            <li>
+              <b>Styling & Architecture:</b> SASS, responsive design, design
+              systems, reusable component libraries
+            </li>
+            <li>
+              <b>Accessibility:</b> WCAG 2.1 AA, Section 508 compliance, ARIA,
+              screen reader and keyboard testing
+            </li>
+            <li>
+              <b>Backend (supporting role):</b> Node.js, Express, SQLite,
+              Firebase Authentication
+            </li>
+            <li>
+              <b>Tools:</b> Git, Jira, Agile/Scrum environments, Figma and Axure
+              for prototyping
+            </li>
+          </ul>
+          <p class="resume-download">
+            <a
+              href="2026-fitzgerald-resume.pdf"
+              class="btn btn--resume"
+              target="_blank"
+            >
+              <i class="fas fa-file-alt"></i>
+              DOWNLOAD RESUME
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <section class="main-content__section main-content__section-alt">
+        <div class="section-inner">
+          <h2 class="h2">Featured Engineering Projects</h2>
+          <!-- Portfolio items start -->
+
+          <!-- Meshperanto -->
+          <article class="portfolio__section">
+            <h3 class="h3">Meshperanto &mdash; 2026</h3>
+            <figure
+              class="portfolio__project-image-figure portfolio__project-image-figure--600"
+            >
+              <img
+                src="img-portfolio/web-gallery-meshperanto.webp"
+                alt="Meshperanto Landing page"
+                class="portfolio__project-image"
+              />
+            </figure>
+            <ul class="portfolio__project-meta-list">
+              <li><strong>Tech:</strong> TypeScript, Node.js, React</li>
+              <li><strong>Role:</strong> Solo Developer</li>
+              <li>
+                <strong>Link:</strong>
+                <a href="https://meshperanto.com" target="_blank"
+                  >Meshperanto.com</a
+                >
+              </li>
+              <li>
+                <strong>Repository:</strong>
+                <a
+                  href="https://github.com/Citizenfitz/meshperanto"
+                  target="_blank"
+                  >https://github.com/Citizenfitz/meshperanto</a
+                >
+              </li>
+            </ul>
+
+            <div class="portfolio__project-summary">
+              A word-level Huffman codec for Meshtastic LoRa mesh networks.
+              Compresses natural language messages by 1.5–2.5× so they travel
+              farther and arrive faster.
+            </div>
+
+            <p>
+              A little side project I dreamed up after wandering down a
+              Meshtastic rabbit hole. LoRa mesh networks are a very cool
+              emerging tech but their off-grid text messages are limited to
+              237-byte packets. It occurred to me you could stretch that out by
+              simple word compression. Meshperanto does so using a canonical
+              Huffman code over the 1,000 most frequent English words, drawn
+              from Peter Norvig's gold-standard trillion-word frequency
+              analysis, typically squeezing messages down by half.
+            </p>
+
+            <p>
+              I built it in what I know: TypeScript, with a React playground for
+              testing. It works great, but honestly, it'd be far more useful in
+              C or Python so it could run in ESP32 chips and the like. Whether I
+              get there myself or find a collaborator if it catches on, we'll
+              see. For now it's a clean, well-tested open source library that
+              does exactly what it says on the tin. Besides, once I came up with
+              the fantastic name, "MESHPERANTO!" there was no way I couldn't
+              build it.
+            </p>
+          </article>
+
+          <!-- QuoDrox -->
+          <article class="portfolio__section">
+            <h3 class="h3">QuoDrox &mdash; 2026</h3>
+            <figure
+              class="portfolio__project-image-figure portfolio__project-image-figure--600"
+            >
+              <img
+                src="img-portfolio/web-gallery-quodrox.jpg"
+                alt="QuoDrox Landing page"
+                class="portfolio__project-image"
+              />
+            </figure>
+            <ul class="portfolio__project-meta-list">
+              <li>
+                <strong>Tech:</strong> HTML, CSS (compiled SCSS), JavaScript,
+                Liquid templates, MailerLite integration
+              </li>
+              <li><strong>Role:</strong> Solo Developer</li>
+              <li>
+                <strong>Link:</strong>
+                <a href="https://quodrox.com" target="_blank">QuoDrox.com</a>
+              </li>
+            </ul>
+
+            <div class="portfolio__project-summary">
+              Landing page and waitlist system for QuoDrox, a set of colorful
+              wooden tiles for tabletop RPGs currently in development. Built
+              from scratch in static HTML with BEM CSS architecture and full
+              accessibility compliance, but designed from the start with a
+              Shopify migration in mind.
+            </div>
+
+            <p>
+              The whimsical look was a lot of fun to design. Behind the curtain
+              it's built for a clean Shopify migration when the product
+              launches. The Liquid templating is already in place, the component
+              structure maps cleanly to Shopify's schema, and the SCSS is
+              organized to survive the transition without a rewrite.
+            </p>
+          </article>
+
+          <!-- Backstoryr -->
+          <article class="portfolio__section">
+            <h3 class="h3">QuestRex Backstoryr &mdash; 2026</h3>
+            <figure
+              class="portfolio__project-image-figure portfolio__project-image-figure--600"
+            >
+              <img
+                src="img-portfolio/web-gallery-backstoryr.jpg"
+                alt="QuestRex Backstoryr Screenshot"
+                class="portfolio__project-image"
+              />
+            </figure>
+            <ul class="portfolio__project-meta-list">
+              <li>
+                <strong>Tech:</strong> React, xAI API, WordPress integration
+              </li>
+              <li><strong>Role:</strong> Full-Stack Developer</li>
+              <li>
+                <strong>Link:</strong>
+                <a href="https://questrex.biz/backstoryr/" target="_blank"
+                  >https://questrex.biz/backstoryr/</a
+                >
+              </li>
+              <li>
+                <strong>Repository:</strong>
+                <a
+                  href="https://github.com/Citizenfitz/backstoryr"
+                  target="_blank"
+                  >https://github.com/Citizenfitz/backstoryr</a
+                >
+              </li>
+            </ul>
+            <div class="portfolio__project-summary">
+              AI-powered backstory generator combining old-school random tables
+              with modern LLMs (xAI API). Users quickly pick character traits,
+              the AI generates a coherent narrative from those constraints, then
+              they can regenerate specific sections they don't like without
+              losing the whole thread.
+            </div>
+
+            <p>
+              This was my first foray into agentic AI development and it turned
+              out quite well. Originally I built it using plain JavaScript with
+              massive random tables, but the results never meshed together into
+              anything coherent. When modern LLMs arrived, I tried using them
+              directly, but the results were equally nonsensical and crafting a
+              detailed prompt for each character took more effort than it was
+              worth. <br /><br />
+
+              I realized that combining both approaches could work: use
+              structured data (user-selected traits) to constrain the AI output.
+              The frontend manages the trait selection quickly, passes that to
+              the AI for narrative generation, then displays results where they
+              can be refined further. The hybrid system produces coherent
+              backstories without requiring users to become prompt engineers.
+              The technical challenge was managing the async API calls and
+              handling partial regeneration—users should be able to keep parts
+              they like while regenerating others. React's component model made
+              this much easier than the vanilla JS approach I started with.
+            </p>
+          </article>
+
+          <!-- Dash's -->
+          <article class="portfolio__section">
+            <h3 class="h3">Dash's of Old Town &mdash; 2026</h3>
+            <figure
+              class="portfolio__project-image-figure portfolio__project-image-figure--600"
+            >
+              <img
+                src="img-portfolio/web-gallery-dashs.jpg"
+                alt="Dashs of Old Town Screenshot"
+                class="portfolio__project-image"
+              />
+            </figure>
+            <ul class="portfolio__project-meta-list">
+              <li>
+                <strong>Tech:</strong> HTML, CSS (compiled SCSS), Liquid
+                templates, static site
+              </li>
+              <li><strong>Role:</strong> Solo Developer</li>
+              <li>
+                <strong>Link:</strong>
+                <a href="https://dashsofoldtown.com" target="_blank"
+                  >Dashsofoldtown.com</a
+                >
+              </li>
+            </ul>
+            <div class="portfolio__project-summary">
+              A bespoke menswear shop on King Street in Alexandria, Virginia.
+              Static site built with Liquid templating and compiled SCSS, chosen
+              deliberately over a CMS to keep it fast, maintainable, and easy
+              for a small shop to own long-term. (They all want a blog. They
+              never maintain the blog.)
+            </div>
+
+            <p>
+              I enjoyed building a CSS architecture for a unified system with
+              fluid typography and spacing that scales seamlessly across
+              viewports. It's nice the browser support is finally solid enough
+              to deploy such a system without breakpoint-stuffed media queries.
+            </p>
+          </article>
+
+          <!-- urAtlas Odyssey -->
+          <article class="portfolio__section">
+            <h3 class="h3">urAtlas Odyssey &mdash; 2025</h3>
+            <figure
+              class="portfolio__project-image-figure portfolio__project-image-figure--600"
+            >
+              <img
+                src="img-portfolio/web-gallery-odyssey-1.png"
+                alt="urAtlas Odyssey Landing page"
+                class="portfolio__project-image"
+              />
+            </figure>
+            <ul class="portfolio__project-meta-list">
+              <li>
+                <strong>Tech:</strong> React, SQLite, Express.js, Firebase Auth,
+                Node.js
+              </li>
+              <li>
+                <strong>Role:</strong> Frontend Engineer (Full-Stack Prototype)
+              </li>
+              <li><strong>Link:</strong> Available upon request</li>
+            </ul>
+
+            <div class="portfolio__project-summary">
+              A full-stack accountability platform for life coaches. React
+              frontend with real-time dashboards, Express/SQLite backend,
+              Firebase auth.
+            </div>
+
+            <p>
+              This was my first full-stack build where I owned the entire
+              system, and I used Cursor extensively to accelerate development. I
+              handled the frontend architecture and React implementation myself
+              (that's my forte), but leveraged Cursor's AI assistance for
+              backend scaffolding, Express routing, and SQLite setup. The
+              result: I shipped a complete full-stack app in weeks instead of
+              months.
+            </p>
+
+            <p>
+              Doing all this was a real eye opener. The future of software
+              development isn't extensive hand coding and memorization of
+              abstruse syntax, it's having the experience and talent to
+              architect, direct, and debug systems as they're built
+              autonomously.
+            </p>
+            <p>
+              The program is a riff on the popular
+              <em>12 Week Year</em> concept, bringing clarity and intensity to a
+              task so it can be completed in record time. It helps users do that
+              by setting meaningful goals, tracking weekly execution, and
+              getting visual feedback via momentum indicators, check-in
+              dashboards, and self-assigned scoring.
+            </p>
+            <p>
+              The dashboard UI required managing complex state across multiple
+              views including momentum scores, check-in history, and weekly
+              progress tracking. I used React Context for global state and kept
+              component-level state minimal, which made the whole system far
+              easier to understand and debug.
+            </p>
+          </article>
+
+          <!-- Moblie Game UI-->
+          <article class="portfolio__section">
+            <h3 class="h3">Squirl! Mobile Game UI &mdash; 2025</h3>
+
+            <ul class="portfolio__project-meta-list">
+              <li><strong>Tech:</strong> React, SASS, HTML, Replit, Figma</li>
+              <li><strong>Role:</strong> Frontend Developer</li>
+              <li>
+                <strong>Link:</strong> NDA, details available upon request
+              </li>
+            </ul>
+
+            <div class="portfolio__project-summary">
+              Frontend development and UI design for an early-stage mobile game
+              startup.
+            </div>
+            <p>
+              A social mobile app that came to me as a working prototype built
+              with AI-assisted coding tools. The foundation was solid but the
+              architecture needed an experienced hand. First a lot of UX
+              consultation to define the goals and flows clearly followed by a
+              lot of code refactoring. Full details including client name are
+              under NDA, which is fairly standard for pre-launch products. Happy
+              to discuss the technical work in an interview setting.
+            </p>
+            <p>
+              This sort of work is becoming increasingly common. Vibe coding is
+              powerful and can get a founder to the demo stage but it almost
+              always takes a senior frontend developer to get them to a product.
+              Someone should launch a service just for that. Oh, wait...
+            </p>
+          </article>
+
+          <!-- Character Generator -->
+          <article class="portfolio__section">
+            <h3 class="h3">QuestRex Character Generator &mdash; 2024</h3>
+            <figure
+              class="portfolio__project-image-figure portfolio__project-image-figure--600"
+            >
+              <img
+                src="img-portfolio/web-gallery-qr-char-builder.png"
+                alt="QuestRex Character Generator"
+                class="portfolio__project-image"
+              />
+            </figure>
+            <ul class="portfolio__project-meta-list">
+              <li>
+                <strong>Tools:</strong> React.js, SASS, WordPress Plugin API
+              </li>
+              <li><strong>Role:</strong> Frontend Developer</li>
+              <li>
+                <strong>Link:</strong>
+                <a
+                  href="https://questrex.biz/character-builder/"
+                  target="_blank"
+                  >https://questrex.biz/character-builder/</a
+                >
+              </li>
+              <li>
+                <strong>Repository:</strong>
+                <a
+                  href="https://github.com/Citizenfitz/character-builder"
+                  target="_blank"
+                  >https://github.com/Citizenfitz/character-builder</a
+                >
+              </li>
+            </ul>
+            <div class="portfolio__project-summary">
+              Complex React app managing 50+ interconnected character creation
+              fields with cascading dependencies. Deliberately avoided a
+              database so everything runs from JSON/Markdown files. Packaged as
+              a WordPress plugin to play nicely with the existing site.
+            </div>
+            <p>
+              For all the nostalgia over the "good old days" of simpler
+              JavaScript, I can't imagine building this in anything other than
+              React. There's just TOO much state management. Character
+              attributes that affect available talents, talents that modify
+              stats, talents that are required for other talents, etc. In plain
+              JavaScript it would've been a Kafkaesque thicket of spaghetti
+              code.<br /><br />
+
+              I deliberately avoided a backend database to keep it portable and
+              modular. Everything is stored in plain JSON or Markdown files,
+              which are parsed directly into the page. Clunky? Well... maybe a
+              little. But more often than not, the KISS principle (Keep It
+              Simple, Stupid) wins over being devastatingly clever. With no
+              server requirements, no database migrations, and no deployment
+              complexity it can be just dropped in and it works.<br /><br />
+
+              The WordPress plugin integration was an interesting challenge.
+              React apps usually want to own the whole page, but here I needed
+              to play nicely with WordPress's ecosystem. The solution was
+              building a clean boundary layer that handles the React
+              mount/unmount lifecycle without conflicting with other plugins or
+              the theme.
+            </p>
+          </article>
+
+          <!-- CPSC -->
+          <article class="portfolio__section">
+            <h3 class="h3">
+              Consumer Product Safety Commission (CPSC) &mdash; 2019-2024
+            </h3>
+            <figure
+              class="portfolio__project-image-figure portfolio__project-image-figure--600"
+            >
+              <img
+                src="img-portfolio/web-gallery-01.png"
+                alt="CPSC Dashboard"
+                class="portfolio__project-image"
+              />
+            </figure>
+            <ul class="portfolio__project-meta-list">
+              <li>
+                <strong>Tech:</strong> React.js, SASS, Axure, Section508
+                accessibility testing
+              </li>
+              <li>
+                <strong>Role:</strong> Senior UX / Front-End Developer @
+                Publicis Sapient
+              </li>
+            </ul>
+            <div class="portfolio__project-summary">
+              A production React application to modernize legacy internal
+              workflows for a federal agency. Implemented WCAG 2.1 AA
+              accessibility across 40+ custom components—baked in from the
+              start, not bolted on later. Had to extract actual requirements
+              from fuzzy processes and build something flexible enough to handle
+              shifting needs as the client clarified what they actually wanted.
+            </div>
+            <p>
+              The most vexing part of this project wasn't the React code; it was
+              extracting actual requirements from fuzzy internal processes. The
+              client knew exactly how to do their job but had a much harder time
+              spelling out the specific steps and identifying the edge cases
+              that had crept into their workflows. We had to build something
+              flexible enough to handle requirements that kept shifting as they
+              clarified their own processes.<br /><br />
+
+              From an architecture standpoint, this meant designing components
+              that could adapt without full rewrites and keeping the CSS
+              centralized instead of component-based. When a new requirement
+              surfaced (which happened frequently), we could often handle it by
+              reconfiguring existing components rather than building new ones
+              from scratch.<br /><br />
+
+              Accessibility is non-negotiable for federal work, so I built it in
+              from the start with quality markup and plugins with built-in
+              compliance rather than bolting it on later. That upfront
+              investment saved us from expensive remediation work and made the
+              Section 508 compliance audit relatively painless.
+            </p>
+          </article>
+
+          <!-- HRSA -->
+          <article class="portfolio__section">
+            <h3 class="h3">
+              HRSA Health Workforce Connector &mdash; 2017-2019
+            </h3>
+            <figure
+              class="portfolio__project-image-figure portfolio__project-image-figure--600"
+            >
+              <img
+                src="img-portfolio/web-gallery-hrsa.png"
+                alt="HRSA Health Workforce Connector Website"
+                class="portfolio__project-image"
+              />
+            </figure>
+            <ul class="portfolio__project-meta-list">
+              <li>
+                <strong>Tech Stack:</strong> Angular, SASS, Accessibility
+                Standards, Axure
+              </li>
+              <li>
+                <strong>Role:</strong> Senior Frontend Developer @ Publicis
+                Sapient
+              </li>
+            </ul>
+            <div class="portfolio__project-summary">
+              Developed a component library and UX patterns deployed across 5+
+              federal healthcare websites. Built the Angular application from
+              beta through production, surviving complete rewrites when the
+              framework matured. Created reusable, accessibility-compliant
+              components used by multiple developer teams.
+            </div>
+            <p>
+              This project was a bear. We started with the beta version of
+              Angular, had to recode the entire thing when 1.0 was released, and
+              then reworked large swaths repeatedly until Angular finally
+              settled into a stable form. Launching a major project with a novel
+              technology was, perhaps, an ill-advised decision from the
+              higher-ups. But with perseverance and the grace of Stack Overflow
+              we pulled it off.<br /><br />
+
+              By the time I rolled off, the app was motoring along smoothly. The
+              project crises made for very rapid learning. Towards its end I was
+              working with the UX team to create style and component conventions
+              across the various sub-apps and that was a satisfying close to the
+              ride.
+            </p>
+          </article>
+
+          <!-- PenFed -->
+          <article class="portfolio__section">
+            <h3 class="h3">PenFed Credit Union Mobile App</h3>
+            <ul class="portfolio__project-meta-list">
+              <li>
+                <strong>Tech Stack:</strong> PhoneGap (Cordova), HTML5, CSS3,
+                JavaScript
+              </li>
+              <li>
+                <strong>Role:</strong> Senior Frontend Developer @ Publicis
+                Sapient
+              </li>
+            </ul>
+            <div class="portfolio__project-summary">
+              A hybrid mobile banking app (PhoneGap/Cordova). I led CSS
+              architecture and cross-platform styling to ensure visual
+              consistency across iOS, Android, and legacy devices.
+            </div>
+            <p>
+              This was a hybrid mobile app built with PhoneGap for Pentagon
+              Federal Credit Union. I worked on the front end and was largely
+              responsible for the CSS and styling.<br /><br />
+
+              That task turned out to be far more complicated than expected,
+              thanks to the peculiarities of various mobile OSes and browsers.
+              Font rendering, layout, and z-index issues were my bane -
+              particularly on older browsers. I remember a teammate joking that
+              it would've been cheaper to just buy complaining users new phones
+              than spend days figuring out why something wasn't rendering
+              correctly on a three-year-old Android device.<br /><br />
+
+              The final product was solid but hammered home why mobile
+              development needed to move away from the hybrid approach. They
+              introduce too many limitations and whatever time you save on
+              initial development you'll likely squander on bug fixes. Native
+              apps offer far more control and consistency.
+            </p>
+          </article>
+
+          <!-- DOE HR -->
+          <article class="portfolio__section">
+            <h3 class="h3">Department of Energy HR Website</h3>
+            <figure
+              class="portfolio__project-image-figure portfolio__project-image-figure--600"
+            >
+              <img
+                src="img-portfolio/web-gallery-doe.png"
+                alt="DOE HR Office Website"
+                class="portfolio__project-image"
+              />
+            </figure>
+            <ul class="portfolio__project-meta-list">
+              <li>
+                <strong>Tech Stack:</strong> HTML, CSS, JavaScript, 508
+                Standards
+              </li>
+              <li>
+                <strong>Role:</strong> Lead UX & Senior Frontend Developer @
+                DST/SDSE
+              </li>
+            </ul>
+            <div class="portfolio__project-summary">
+              Redesign of the HR office for the Department of Energy. Solo
+              effort where I led the redesign as a straightforward static site
+              of HTML and CSS with 508 compliance. The heavy lift was lots of
+              consensus building and navigating bureaucratic requirements.
+            </div>
+            <p>
+              This was a complete redesign of the Department of Energy's HR
+              office. I knew I was in uncharted territory when I was directed to
+              rename the site to
+              <em>"The Office of the Chief Human Capital Officer."</em> Just
+              rolls off the tongue, right?<br /><br />
+
+              Bureaucratic tape aside, this job was mostly an exercise in
+              getting a large number of stakeholders to agree on what actually
+              needed to be built. The actual building of the site was rather
+              pedestrian: a static HTML and CSS affair with careful attention to
+              accessibility compliance. This remains my peak people-skills
+              project, and in the end, they served me well. Everyone agreed.
+              Everyone liked what was built. And no one saw a problem with
+              <em>"The Office of the Chief Human Capital Officer."</em>. Mission
+              accomplished.<br /><br />
+
+              <strong>Fun project story:</strong> While waiting to show my
+              designs to a director for sign-off, I sat outside his office
+              listening to him gushing about a great new company that was going
+              to revolutionize solar energy. The company?
+              <a href="https://en.wikipedia.org/wiki/Solyndra" target="_blank"
+                >Solyndra</a
+              >.
+            </p>
+          </article>
+
+          <!-- NREPP -->
+          <article class="portfolio__section">
+            <h3 class="h3">NREPP Online Training Course</h3>
+            <figure
+              class="portfolio__project-image-figure portfolio__project-image-figure--600"
+            >
+              <img
+                src="img-portfolio/web-gallery-nrepp.png"
+                alt="NREPP Training site"
+                class="portfolio__project-image"
+              />
+            </figure>
+            <ul class="portfolio__project-meta-list">
+              <li>
+                <strong>Tech Stack:</strong> HTML, CSS, JavaScript, WebMerge
+              </li>
+              <li>
+                <strong>Role:</strong> Lead Frontend Developer @ MANILA
+                Consulting Group
+              </li>
+            </ul>
+            <div class="portfolio__project-summary">
+              A large interactive training course for the National Registry of
+              Evidence-based Programs and Practices that need to be delivered
+              both online and on CD-ROM.
+            </div>
+            <p>
+              Of all the work I've done over the years, this was probably my
+              favorite project. I got to handle all the design and most of the
+              coding—pure creative control, which is a rare thing. We had a team
+              of PhDs designing the course content and writers shaping the copy,
+              while I turned it into a working website.<br /><br />
+
+              The interesting technical challenge came when we learned the
+              course had to be usable on CD-ROM (those were the days, eh?). I
+              discovered magical WebMerge tool from 4th World Software. It let
+              us "mail-merge" our database-driven course into a static, portable
+              site that could run off a disc. I'm still a fan of WebMerge and
+              wager that many sites built today would work better with this
+              approach.<br /><br />
+
+              I think I loved doing this project because I got to be the captain
+              of all things Web. I chose the tech stack, implemented the
+              majority of the code, designed the interface, and handled the
+              graphics. This was right before websites became too complicated
+              for one person to field it all themselves. Interestingly, with the
+              new AI-assisted coding we're kind of circling back to that
+              paradigm again.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__branding">
+          <div class="footer__title">
+            <a href="index.html">Citizen Fitz</a>
+          </div>
+          <div class="footer__tagline">Creative Technologist</div>
+          <div class="footer__copyright">© 2026 Zentropolis, Inc.</div>
+        </div>
+
+        <nav class="footer__nav">
+          <ul class="footer__menu">
+            <li><a href="launchworks.html">LaunchWorks</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li>
+              <a
+                href="https://calendly.com/fitzaco"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Book a Call&nbsp;
+                <i
+                  class="fa-solid fa-up-right-from-square"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

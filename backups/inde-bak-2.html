@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael Fitzgerald Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Codystar&family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Original styles preserved for reference
+    <style>
+      :root
+      {
+        /* Typography */
+        --font-body: "Inter", sans-serif;
+        --font-header: "Alegreya", serif;
+        --font-decorative: "Codystar", sans-serif;
+
+        /* Primary Colors */
+        --color-primary: #173753;
+        --color-primary-light: #286fa8;
+        --color-primary-dark: #215295;
+
+        /* Secondary Colors */
+        --color-secondary: #4a2c2a;
+        --color-secondary-dark: #2f1c1a;
+
+        /* Background Colors */
+        --color-bg-main: #cbe1f3;
+        --color-bg-white: white;
+        --color-bg-header: #173753;
+
+        /* Text Colors */
+        --color-text-body: #173753;
+        --color-text-light: #cbe1f3;
+        --color-text-accent: #f7c45f;
+        --color-text-accent-hover: #ffe2b6;
+
+        /* UI Elements */
+        --color-shadow: rgba(0, 0, 0, 0.1);
+      }
+      body,
+      html
+      {
+        margin: 0;
+        padding: 0;
+        font-family: var(--font-body);
+        font-weight: 500;
+        font-style: normal;
+        color: var(--color-text-body);
+        background-color: var(--color-bg-white);
+        line-height: 1.6;
+        font-size: 16px;
+      }
+
+       /* ******** HEADER & NAVIGATION ******** */
+       .site-header {
+         background-color: var(--color-bg-white);
+         box-shadow: 0 2px 4px var(--color-shadow);
+         position: sticky;
+         top: 0;
+         z-index: 100;
+       }
+
+       .nav-main {
+         max-width: 800px;
+         margin: 0 auto;
+         padding: 1rem;
+       }
+
+       .nav-container {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+       }
+
+       .nav-logo {
+         font-family: var(--font-header);
+         font-size: 1.5rem;
+         color: var(--color-primary);
+         text-decoration: none;
+         font-weight: 700;
+       }
+
+       .nav-menu {
+         display: flex;
+         gap: 2rem;
+         list-style: none;
+         margin: 0;
+         padding: 0;
+       }
+
+       .nav-menu a {
+         color: var(--color-text-body);
+         text-decoration: none;
+         font-weight: 500;
+       }
+
+       .nav-menu a:hover {
+         color: var(--color-primary);
+       }
+
+       .nav-cta {
+         background-color: var(--color-text-accent);
+         color: var(--color-primary) !important;
+         padding: 0.5rem 1rem;
+         border-radius: 5px;
+         transition: background-color 0.3s ease;
+       }
+
+       .nav-cta:hover {
+         background-color: var(--color-text-accent-hover);
+       }
+
+       @media (max-width: 768px) {
+         .nav-menu {
+           gap: 1rem;
+         }
+
+         .nav-logo {
+           font-size: 1.25rem;
+         }
+       }
+
+       /* ******** HERO SECTION ******** */
+       .hero {
+         width: 100%;
+         background-color: var(--color-bg-header);
+         color: var(--color-text-light);
+         text-align: center;
+         padding: 40px 0;
+         margin-bottom: 20px;
+         background: linear-gradient(
+           135deg,
+           var(--color-secondary) 0%,
+           var(--color-secondary-dark) 25%,
+           var(--color-secondary) 50%,
+           var(--color-secondary-dark) 75%,
+           var(--color-secondary) 100%
+         ),
+         linear-gradient(
+           45deg,
+           var(--color-secondary-dark) 0%,
+           var(--color-secondary) 25%,
+           var(--color-secondary-dark) 50%,
+           var(--color-secondary) 75%,
+           var(--color-secondary-dark) 100%
+         );
+         /* background-size: 100% 500px; /* Increased pattern height */
+         background-repeat: no-repeat; */
+       }
+
+       .hero__container {
+         max-width: 800px;
+         margin: 0 auto;
+         display: flex;
+         justify-content: space-between;
+         gap: 40px;
+       }
+
+       .hero__title {
+         align-items: right;
+       }
+
+       .hero__cta {
+         text-align: left;
+         max-width: 500px;
+         color: var(--color-text-light);
+         font-size: 1.1em;
+         line-height: 1.7;
+      }
+
+      h1 {
+        font-family: var(--font-header);
+        font-size: 92px;
+        line-height: 1em;
+        text-align: right;
+        margin: 0;
+        /* font-weight: 600; */
+      }
+      .subheader {
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-top: -10px;
+        color: var(--color-text-accent);
+        font-family: var(--font-decorative);
+      }
+
+      .fitz {
+        float: right;
+        height: 300px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+      }
+
+      /* ******** MAIN CONTENT STUFF ******** */
+      .main-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      section {
+        margin-top: 0px;
+        margin-bottom: 40px;
+        padding: 0;
+      }
+
+      .h1--main-content {
+        font-family: var(--font-header);
+        font-weight: 700;
+        font-size: 2.5em;
+        margin-top: 0px;
+        margin-bottom: 0.5em;
+        color: var(--color-primary);
+        text-transform: uppercase;
+        text-align: left;
+      }
+
+      h2 {
+        font-family: var(--font-header);
+        font-weight: 700;
+        font-size: 1.8em;
+        margin-top: 0px;
+        margin-bottom: 0.5em;
+        color: var(--color-primary);
+        text-transform: uppercase;
+      }
+      h3 {
+        font-family: var(--font-header);
+        font-weight: 700;
+        font-size: 1.5em;
+        margin-top: 0px;
+        color: var(--color-secondary);
+        margin-bottom: 0.5em;
+      }
+      p,
+      li {
+        font-size: 1.1em;
+        margin-top: 0;
+      }
+      li {
+        margin-bottom: 0.125em;
+      }
+      ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin-top: 0;
+      }
+
+      /* ******** FOOTER STUFF ******** */
+      .footer {
+        width: 100%;
+        background-color: var(--color-bg-header);
+        color: var(--color-text-light);
+        text-align: center;
+        padding: 20px 0;
+        background: linear-gradient(
+            135deg,
+            var(--color-secondary) 0%,
+            var(--color-secondary-dark) 25%,
+            var(--color-secondary) 50%,
+            var(--color-secondary-dark) 75%,
+            var(--color-secondary) 100%
+          ),
+          linear-gradient(
+            45deg,
+            var(--color-secondary-dark) 0%,
+            var(--color-secondary) 25%,
+            var(--color-secondary-dark) 50%,
+            var(--color-secondary) 75%,
+            var(--color-secondary-dark) 100%
+          );
+        /* background-size: 100% 500px; /* Increased pattern height */
+        background-repeat: no-repeat; */
+      }
+      .divider_vert {
+        color: var(--color-text-accent);
+        font-family: var(--font-decorative);
+        margin: 0 32px;
+      }
+
+      .btn-cta {
+        display: inline-block;
+        margin: 20px 0;
+        padding: 10px 20px;
+        /* background-color: var(--color-primary);
+        color: var(--color-text-light); */
+        background-color: var(--color-text-accent);
+        color: var(--color-primary);
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 600;
+      }
+      .btn-cta:hover {
+        background-color: var(--color-text-accent-hover);
+      }
+
+      @media (max-width: 768px) {
+        .main-content {
+          margin: 15px;
+        }
+        h2 {
+          font-size: 1.5em;
+        }
+        h3 {
+          font-size: 1.2em;
+        }
+        p,
+        li {
+          font-size: 1em;
+        }
+      }
+    </style> -->
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-main">
+        <div class="nav-container">
+          <a href="/" class="nav-logo">Citizen Fitz</a>
+          <ul class="nav-menu">
+            <li><a href="#">LaunchWorks</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li>
+              <a href="https://calendly.com/fitzaco" class="nav-cta"
+                >Book a Call</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero__container">
+        <div class="hero__title">
+          <img src="img/fitz-at-computer.png" class="fitz" alt="Screenshot" />
+          <h1>
+            Michael<br />"Fitz"<br />Fitzgerald
+            <div class="subheader">UX &amp; Front-end Specialist</div>
+          </h1>
+        </div>
+        <div class="hero__cta">
+          <strong
+            >Howdy! I run Fitzaco Launchworks. I help founders and
+            "soloprenuers" take half-built products and make them launch-ready
+            with design, UX, front-end polish, and whatever it takes to
+            ship.</strong
+          ><br /><br />
+          I've spent years building products for government and major brands,
+          and now I bring that same experience to startups and solo founders who
+          need senior-level help without agency overhead or offshore guesswork.
+          I field most of the work myself, but I've got a strong network of
+          senior specialists I can bring in when needed, including top-notch
+          designers, usability testers, and the occasional esoteric programmer
+          (Erlang, anyone?).<br /><br />
+
+          <a href="https://calendly.com/fitzaco" class="btn-cta">Book a Call</a>
+        </div>
+      </div>
+    </section>
+
+    <main class="main-content">
+      <hr />
+      <h1 class="h1 h1--main-content">Homepage</h1>
+      <p>
+        Citizen Fitz is my clearinghouse for my work in design and development
+        (mostly UI/UX/Web), along with whatever sundry digressions, experiments,
+        and mental cul-de-sacs my mind wanders into. (Look! Bees have swarmed my
+        balcony!).
+      </p>
+      <p>
+        If nothing else I hope it sparks a few good conversations, leads to
+        meeting interesting people, and maybe even results in some worthwhile
+        (and wildly profitable) work along the way.
+      </p>
+      <hr />
+      <h1 class="h1 h1--main-content">Launchworks</h1>
+      <section>
+        <h2>If You're Having Troubles Like</h2>
+        <ul>
+          <li>
+            “AI got me almost there, but it can't finish it the way I want.”
+          </li>
+          <li>“I don't know if users will get it.”</li>
+          <li>
+            “We keep adding things to make it 'ready,' but it never feels done.”
+          </li>
+          <li>“We've been at 90% for months.”</li>
+        </ul>
+        <h3>I Can Help By</h3>
+        <ul>
+          <li>
+            <strong>UX</strong> -
+            <em
+              >No AI can code well a poorly defined app, and you can't cross a
+              finish line if you don't know where it is.</em
+            >
+            UX is the source of most downstream headaches: unclear MVP goals;
+            confusing flows; or features that don't quite fit. I help you define
+            what the product is supposed to do and map a lean, obvious path for
+            your users so the design, code, and copy finally work together.
+          </li>
+          <li>
+            <strong>Code</strong> - I stabilize what's built, cut the bloat, and
+            make it production-ready.
+          </li>
+          <li>
+            <strong>Graphics</strong> - I refine the look and feel so everything
+            feels deliberate and professional.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>What I Offer</h2>
+        <h3>Free “Just Get It Done” Review</h3>
+        <p>
+          An hour under NDA to sort out what you've built, where you're stuck,
+          and what it'll take to finish. I'll follow up with a short written
+          report, and you can decide how you want to proceed.
+        </p>
+        <p>
+          <em
+            >When you book, I'll send a brief mutual NDA for e-signature before
+            our call.</em
+          >
+        </p>
+        <a href="https://calendly.com/fitzaco" class="btn-cta">Book a Call</a>
+        <h3>Project Sprint (Fixed Price)</h3>
+        <p>
+          For small, clearly defined efforts (usually
+          <strong>1 - 2 weeks</strong>). We agree on outcomes and I deliver them
+          for a flat fee. This works best for:
+        </p>
+        <ul>
+          <li>UX and design overhauls</li>
+          <li>Tightening up confusing flows</li>
+          <li>Getting an MVP launch-ready</li>
+        </ul>
+        <h3>Hourly / Ongoing Support</h3>
+        <p>
+          If you'd rather keep it flexible, I bill hourly in 10-hour blocks. You
+          can use the time for:
+        </p>
+        <ul>
+          <li>Quick UX or UI fixes</li>
+          <li>Front-end cleanup or code review</li>
+          <li>Implementation of design changes</li>
+        </ul>
+        <a href="https://calendly.com/fitzaco" class="btn-cta">Book a Call</a>
+      </section>
+
+      <hr />
+      <h1 class="h1 h1--main-content">Portfolio</h1>
+
+      <article class="portfolio__project">
+        <h3 class="portfolio__header">QuestRex Backstoryr</h3>
+        <figure
+          class="portfolio__project-image-figure portfolio__project-image-figure--600"
+        >
+          <img
+            src="img-portfolio/web-gallery-backstoryr.jpg"
+            alt="QuestRex Backstoryr Screenshot"
+            class="portfolio__project-image"
+          />
+        </figure>
+        <p class="portfolio__project-meta">
+          <strong>Role:</strong> Full Stack(ish) Developer<br />
+          <strong>Tools:</strong> React, xAI, Wordpress<br />
+          <strong>Link:</strong>
+          <a href="https://questrex.biz/backstoryr/" target="_blank"
+            >https://questrex.biz/backstoryr/</a
+          >
+        </p>
+        <p class="portfolio__project-description">
+          The
+          <b
+            ><a href="https://questrex.biz/backstoryr/" target="_blank"
+              >QuestRex Backstoryr</a
+            ></b
+          >
+          is my first foray into coding agentic, AI-generated content and it
+          turned out quite well. Originally I built it using plain JavaScript,
+          but was unhappy with the results. Yes, it could fling out tons of
+          random notions, but none of them meshed together into anything
+          sensible (kinda like early Beck lyrics). And even with massive random
+          tables, the options were still limited. When the modern batch of LLMs
+          arrived I attempted to do the same with them but the results were
+          equally disappointing. Without detailed, carefully structured prompts
+          the results were too chaotic to be useful and spending the time to
+          create those prompts for each character was more effort that it was
+          worth.<br /><br />
+
+          I realized that combining the two approaches could work, and it does.
+          The front-end allows users to quickly define key traits of their
+          character, which the app then passes to the AI to generate a cohesive
+          backstory. The results are displayed on the UI, where they can be
+          refined further. I think the outcome is pretty useful.<br /><br />
+
+          The agentic programming model is something I plan to explore more.
+          While modern AI is powerful, to get solid results, you often need to
+          narrow the scope and define the task clearly. It takes effort to
+          fine-tune prompts and model parameters to get useful output.
+        </p>
+      </article>
+
+      <article class="portfolio__project">
+        <h3 class="portfolio__header">urAtlas Odyssey</h3>
+        <figure
+          class="portfolio__project-image-figure portfolio__project-image-figure--600"
+        >
+          <img
+            src="img-portfolio/web-gallery-odyssey-1.png"
+            alt="urAtlas Odyssey Landing page"
+            class="portfolio__project-image"
+          />
+        </figure>
+        <p class="portfolio__project-meta">
+          <strong>Role:</strong> Full Stack(ish) Developer<br />
+          <strong>Tools:</strong> React, SQLite, Express.js, Firebase Auth,
+          Cursor, Tawk
+        </p>
+        <p class="portfolio__project-description">
+          This is my first full-stack application where I was in charge of every
+          pixel and bit of code on the page (although I'll admit to leaning
+          mightily on AI to help with the backend, which is not my forte).<br /><br />
+
+          The program is a riff on the popular <em>12 Week Year</em> concept,
+          bringing clarity and intensity to a task so it can be completed in
+          record time. It helps users do that by setting meaningful goals,
+          tracking weekly execution, and getting visual feedback via momentum
+          indicators, check-in dashboards, and self-assigned scoring.<br /><br />
+
+          The UX was far more challenging than I expected, especially since I
+          had to architect it with enough flexibility to support both life coach
+          and AI integration in future iterations.<br /><br />
+
+          I'm not making the URL public to protect the data I'm collecting from
+          a discrete group of life coaches who are currently testing it. If
+          you're a prospective employer and want to take a look, just ask as I'm
+          happy to share.
+        </p>
+      </article>
+
+      <article class="portfolio__project">
+        <h3 class="portfolio__header">QuestRex Character Generator</h3>
+        <figure
+          class="portfolio__project-image-figure portfolio__project-image-figure--600"
+        >
+          <img
+            src="img-portfolio/web-gallery-qr-char-builder.png"
+            alt="QuestRex Character Generator"
+            class="portfolio__project-image"
+          />
+        </figure>
+        <p class="portfolio__project-meta">
+          <strong>Role:</strong> UX / Front-End Specialist<br />
+          <strong>Tools:</strong> React.js, SASS<br />
+          <strong>Link:</strong>
+          <a href="https://questrex.biz/character-builder/" target="_blank"
+            >https://questrex.biz/character-builder/</a
+          >
+        </p>
+        <p class="portfolio__project-description">
+          This is a complex character generator I built to support my tabletop
+          role-playing game,
+          <a href="http://QuestRex.biz" target="_blank"><b>QuestRex</b></a
+          >. For all the nostalgia about the "good old days" of simpler
+          JavaScript, I can't imagine building this in anything other than
+          React. There's just SO much state to manage it would've been a
+          nightmare of spaghetti code in POJS. I designed and coded most of it
+          myself, but my good friend <b>Frank Ali</b> helped a lot with certain
+          sections.<br /><br />
+
+          There's no database or backend here. To avoid that complexity and to
+          keep it as modular as possible I store everything in plain JSON or
+          Markdown files, which are parsed directly into the page. Clunky?
+          Well... maybe a little. But more often than not, the KISS principle
+          (Keep It Simple, Stupid) wins over being devastatingly clever.
+        </p>
+      </article>
+
+      <article class="portfolio__project">
+        <h3 class="portfolio__header">
+          Consumer Product Safety Commission (CPSC)
+        </h3>
+        <figure
+          class="portfolio__project-image-figure portfolio__project-image-figure--600"
+        >
+          <img
+            src="img-portfolio/web-gallery-01.png"
+            alt="CPSC Dashboard"
+            class="portfolio__project-image"
+          />
+        </figure>
+        <p class="portfolio__project-meta">
+          <strong>Role:</strong> Senior UX / Front-End Developer @ Publicis
+          Sapient<br />
+          <strong>Tools:</strong> Axure, React.js, SASS, Photophop, Illustrator,
+          Accessibility Standards
+        </p>
+        <p class="portfolio__project-description">
+          This was my last corporate gig and a great one because it finally gave
+          me the chance to land in the UX/front-end development space I'd been
+          tacking towards for years. For a while, tech roles had become so
+          siloed and specialized that holding a more holistic position was
+          nearly impossible. But this one let me bounce between building
+          wireframes, giving client presentations, jumping into front-end Jira
+          tickets, and even designing a few logos. It was all very
+          satisfying.<br /><br />
+
+          The application itself was completely new and based on some rather
+          fuzzy internal processes the client had. We had to extract their
+          actual needs and pivot quickly when new requirements surfaced (which
+          they did frequently). Like so many clients I've worked with, they knew
+          exactly how to do their job but had a much harder time articulating
+          the specific steps and exceptions within their workflows. In the end
+          they got not only a great app but also a much deeper understanding of
+          those steps and processes which, honestly, might've been the most
+          valuable part.
+        </p>
+      </article>
+
+      <article class="portfolio__project">
+        <h3 class="portfolio__header">HRSA Health Workforce Connector</h3>
+        <figure
+          class="portfolio__project-image-figure portfolio__project-image-figure--600"
+        >
+          <img
+            src="img-portfolio/web-gallery-hrsa.png"
+            alt="HRSA Health Workforce Connector Website"
+            class="portfolio__project-image"
+          />
+        </figure>
+        <p class="portfolio__project-meta">
+          <strong>Role:</strong> Senior Front-End Developer with some UX<br />
+          <strong>Tools:</strong> Angular, CSS, SASS, Accessibility Standards,
+          Axure
+        </p>
+        <p class="portfolio__project-description">
+          For this project, I was primarily a front-end developer working in
+          Angular as part of a very large team. Toward the end, I got to do some
+          wireframing, but it remained mostly a coding-heavy role and I hardly
+          did any designing at all.<br /><br />
+
+          The coding was a bear. We started with the beta version of Angular,
+          had to recode the entire thing when 1.0 was released, and then
+          reworked large swaths repeatedly until Angular finally settled into a
+          stable form. Launching a major project with a novel technology was,
+          perhaps, an ill-advised decision from the higher-ups. But with
+          perseverance and the grace of Stack Overflow we pulled it off.<br /><br />
+
+          By the time I rolled off, the app was motoring along smoothly. The
+          project crises made for very rapid learning. It was also one of the
+          largest teams I've ever worked on (100+ people). Towards its end I was
+          working with the UX team to create style conventions across the
+          various sub-apps and that was a satisfying close to the ride.
+        </p>
+      </article>
+
+      <article class="portfolio__project">
+        <h3 class="portfolio__header">PenFed Credit Union Mobile App</h3>
+        <p class="portfolio__project-meta">
+          <strong>Role:</strong> Senior UX / Front-End Developer<br />
+          <strong>Tools:</strong> Hybrid Mobile Frameworks, Secure Front-End
+          Patterns
+        </p>
+        <p class="portfolio__project-description">
+          This was a mobile banking application for Pentagon Federal Credit
+          Union, built as a hybrid web app for deployment on both Android and
+          iOS. I worked on the front end and was largely responsible for the CSS
+          and styling.<br /><br />
+
+          That task turned out to be far more complicated than expected, thanks
+          to the peculiarities of various mobile OSes and browsers. Font
+          rendering, layout, and z-index issues were my bane - particularly on
+          older browsers. I remember a teammate joking that it would've been
+          cheaper to just buy complaining users new phones than spend days
+          figuring out why something wasn't rendering correctly.<br /><br />
+
+          Still, we pulled it off, and the final product was solid. Nowadays
+          most mobile dev has moved away from hybrid apps as they just introduce
+          too many limitations. Native apps offer far more control and
+          consistency.
+        </p>
+      </article>
+
+      <article class="portfolio__project">
+        <h3 class="portfolio__header">Department of Energy HR Website</h3>
+        <figure
+          class="portfolio__project-image-figure portfolio__project-image-figure--600"
+        >
+          <img
+            src="img-portfolio/web-gallery-doe.png"
+            alt="CDOE HR Office Website"
+            class="portfolio__project-image"
+          />
+        </figure>
+        <p class="portfolio__project-meta">
+          <strong>Role:</strong> Lead UX / Senior Front-End Developer @ DST /
+          SDSE<br />
+          <strong>Tools:</strong> HTML, CSS, JavaScript, Accessibility
+        </p>
+        <p class="portfolio__project-description">
+          This was a complete redesign of the Department of Energy's HR office.
+          I knew I was in uncharted territory when I was directed to rename the
+          site to <em>"The Office of the Chief Human Capital Officer."</em> Just
+          rolls off the tongue, right?<br /><br />
+
+          Bureaucratic tape aside, this job was mostly an exercise in getting a
+          large number of stakeholders to agree on what actually needed to be
+          built. The actual building of the site was rather pedestrian: a static
+          HTML and CSS affair with careful attention to accessibility
+          compliance. This remains my peak people-skills project, and in the
+          end, they served me well. Everyone agreed. Everyone liked what was
+          built. And no one saw a problem with
+          <em>"The Office of the Chief Human Capital Officer."</em>. Mission
+          accomplished.<br /><br />
+
+          <strong>Fun project story:</strong> While waiting to show my designs
+          to a director for sign-off, I sat outside his office listening to him
+          gushing about a great new company that was going to revolutionize
+          solar energy. The company?
+          <a href="https://en.wikipedia.org/wiki/Solyndra" target="_blank"
+            >Solyndra</a
+          >.
+        </p>
+      </article>
+
+      <article class="portfolio__project">
+        <h3 class="portfolio__header">NREPP Online Training Course</h3>
+        <figure
+          class="portfolio__project-image-figure portfolio__project-image-figure--600"
+        >
+          <img
+            src="img-portfolio/web-gallery-nrepp.png"
+            alt="NREPP Training site"
+            class="portfolio__project-image"
+          />
+        </figure>
+        <p class="portfolio__project-meta">
+          <strong>Role:</strong> Lead UX / Front-End Developer @ MANILA
+          Consulting Group<br />
+          <strong>Tools:</strong> HTML, CSS, JavaScript, Graphics, WebMerge
+        </p>
+        <p class="portfolio__project-description">
+          Of all the work I've done over the years, this was probably my
+          favorite project. It was a large, interactive course for the National
+          Registry of Evidence-based Programs and Practices (NREPP).<br /><br />
+
+          We had a team of PhDs designing the course, writers and editors
+          shaping the copy, and then me (and my small team) turning it into a
+          working website. I got to do all the design and most of the coding. It
+          was pure creative control, which is a rare thing.<br /><br />
+
+          When we learned the course had to be usable on a CD-ROM (those were
+          the days, eh?), I discovered the magical WebMerge tool from 4th World
+          Software. It let us "mail-merge" our database-driven course into a
+          static, portable site that could run off a disc. I still a fan of
+          Webmerge and wager that half of all sites built today would work
+          better with this approach.<br /><br />
+
+          I think I loved doing this project because I got to be the captain of
+          all things Web. I chose the tech stack, implemented the majority of
+          the code, designed the interface, and handled the graphics. This was
+          right before websites became too complicated for one person to field
+          it all themselves. Interestingly, with the new AI assisted coding
+          we're kind of circling back to that paradigm again.<br /><br />
+
+          The site was taken down years ago but I still have a copy and have
+          toyed with the idea of posting it somewhere for nostalgia's sake, but
+          I'm not sure about the legality. So for now, it lives on in memory and
+          maybe a backup drive or two.
+        </p>
+      </article>
+
+      <h2 class="portfolio__header-divider">Miscellaneous Design</h2>
+      <div class="portfolio__grid portfolio__grid--half">
+        <figure class="portfolio__project-image-figure">
+          <img
+            src="img-portfolio/web-gallery-questrex.png"
+            alt="QuestRex Site"
+            class="portfolio__project-image"
+          />
+          <figcaption class="portfolio__project-image-figcaption">
+            QuestRex Site
+          </figcaption>
+        </figure>
+        <figure class="portfolio__project-image-figure">
+          <img
+            src="img-portfolio/web-gallery-mchale.png"
+            alt="Landscaping design"
+            class="portfolio__project-image"
+          />
+          <figcaption class="portfolio__project-image-figcaption">
+            Landscaping design
+          </figcaption>
+        </figure>
+        <figure class="portfolio__project-image-figure">
+          <img
+            src="img-portfolio/web-gallery-samhsa-model-programs.png"
+            alt="SAMHSA Model Programs"
+            class="portfolio__project-image"
+          />
+          <figcaption class="portfolio__project-image-figcaption">
+            SAMHSA Model Programs
+          </figcaption>
+        </figure>
+        <figure class="portfolio__project-image-figure">
+          <img
+            src="img-portfolio/web-gallery-ot-theater.png"
+            alt="Old Town Theater"
+            class="portfolio__project-image"
+          />
+          <figcaption class="portfolio__project-image-figcaption">
+            Old Town Theater
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="portfolio__grid">
+        <!-- logos -->
+        <figure class="portfolio__project-image-figure">
+          <img
+            src="img-portfolio/portfolio-logo-01.jpg"
+            alt="NREPP Logo"
+            class="portfolio__project-image"
+          />
+          <figcaption class="portfolio__project-image-figcaption">
+            NREPP Logo
+          </figcaption>
+        </figure>
+        <figure class="portfolio__project-image-figure">
+          <img
+            src="img-portfolio/portfolio-doe-jobs-logo.jpeg"
+            alt="Energy Logo"
+            class="portfolio__project-image"
+          />
+          <figcaption class="portfolio__project-image-figcaption">
+            Energy Logo
+          </figcaption>
+        </figure>
+        <figure class="portfolio__project-image-figure">
+          <img
+            src="img-portfolio/portfolio-logo-02.jpg"
+            alt="architects Logo"
+            class="portfolio__project-image"
+          />
+          <figcaption class="portfolio__project-image-figcaption">
+            Architects Design
+          </figcaption>
+        </figure>
+        <figure class="portfolio__project-image-figure">
+          <img
+            src="img-portfolio/portfolio-discovery.jpeg"
+            alt="NREPP Graphics"
+            class="portfolio__project-image"
+          />
+          <figcaption class="portfolio__project-image-figcaption">
+            NREPP Graphics
+          </figcaption>
+        </figure>
+        <figure class="portfolio__project-image-figure">
+          <img
+            src="img-portfolio/portfolio-logo-09.jpg"
+            alt="Fed. Workforce Logo"
+            class="portfolio__project-image"
+          />
+          <figcaption class="portfolio__project-image-figcaption">
+            Fed. Workforce Logo
+          </figcaption>
+        </figure>
+        <figure class="portfolio__project-image-figure">
+          <img
+            src="img-portfolio/portfolio-ecwg-flyer.png"
+            alt="ECWG Flyer"
+            class="portfolio__project-image"
+          />
+          <figcaption class="portfolio__project-image-figcaption">
+            ECWG Flyer
+          </figcaption>
+        </figure>
+
+        <!-- Book Covers-->
+        <figure class="portfolio__project-image-figure">
+          <img
+            src="img-portfolio/portfolio-dan-book-final.jpg"
+            alt="Book Cover Design"
+            class="portfolio__project-image"
+          />
+          <figcaption class="portfolio__project-image-figcaption">
+            Book Cover Design
+          </figcaption>
+        </figure>
+        <figure class="portfolio__project-image-figure">
+          <img
+            src="img-portfolio/portfolio-questrex-cover.jpg"
+            alt="QuestRex Book Cover Design"
+            class="portfolio__project-image"
+          />
+          <figcaption class="portfolio__project-image-figcaption">
+            Book Cover Design
+          </figcaption>
+        </figure>
+        <figure class="portfolio__project-image-figure">
+          <img
+            src="img-portfolio/portfolio-subway-release-party-2-01.jpeg"
+            alt="Subway Flyer"
+            class="portfolio__project-image"
+          />
+          <figcaption class="portfolio__project-image-figcaption">
+            Subway Flyer
+          </figcaption>
+        </figure>
+
+        <!-- Proposal Graphics-->
+        <figure class="portfolio__project-image-figure">
+          <img
+            src="img-portfolio/portfolio-proposal-1.png"
+            alt="Midjourney Proposal Graphic"
+            class="portfolio__project-image"
+          />
+          <figcaption class="portfolio__project-image-figcaption">
+            Midjourney Proposal Graphic
+          </figcaption>
+        </figure>
+        <figure class="portfolio__project-image-figure">
+          <img
+            src="img-portfolio/portfolio-proposal-2.png"
+            alt="Midjourney Proposal Graphic"
+            class="portfolio__project-image"
+          />
+          <figcaption class="portfolio__project-image-figcaption">
+            Midjourney Proposal Graphic
+          </figcaption>
+        </figure>
+        <figure class="portfolio__project-image-figure">
+          <img
+            src="img-portfolio/portfolio-proposal-3.png"
+            alt="Midjourney Proposal Graphic"
+            class="portfolio__project-image"
+          />
+          <figcaption class="portfolio__project-image-figcaption">
+            Midjourney Proposal Graphic
+          </figcaption>
+        </figure>
+
+        <!-- Misc-->
+        <figure class="portfolio__project-image-figure">
+          <img
+            src="img-portfolio/portfolio-cargo-cult-01.png"
+            alt="Cargo Cult Album Cover"
+            class="portfolio__project-image"
+          />
+          <figcaption class="portfolio__project-image-figcaption">
+            Cargo Cult Album Cover
+          </figcaption>
+        </figure>
+        <figure class="portfolio__project-image-figure">
+          <img
+            src="img-portfolio/portfolio-elephant-badge-10.png"
+            alt="Elephant Badge"
+            class="portfolio__project-image"
+          />
+          <figcaption class="portfolio__project-image-figcaption">
+            Elephant Badge
+          </figcaption>
+        </figure>
+        <figure class="portfolio__project-image-figure">
+          <img
+            src="img-portfolio/portfolio-its-the-law_1.jpeg"
+            alt="Misc. Graphics"
+            class="portfolio__project-image"
+          />
+          <figcaption class="portfolio__project-image-figcaption">
+            Misc. Graphics
+          </figcaption>
+        </figure>
+        <figure class="portfolio__project-image-figure">
+          <img
+            src="img-portfolio/web-gallery-df-site.png"
+            alt="Vintage Renn Fest Website"
+            class="portfolio__project-image"
+          />
+          <figcaption class="portfolio__project-image-figcaption">
+            Vintage Renn Fest Website
+          </figcaption>
+        </figure>
+        <figure class="portfolio__project-image-figure">
+          <img
+            src="img-portfolio/portfolio-recog-board.png"
+            alt="Recognition board"
+            class="portfolio__project-image"
+          />
+          <figcaption class="portfolio__project-image-figcaption">
+            Large Wall Graphic
+          </figcaption>
+        </figure>
+      </div>
+
+      <hr />
+    </main>
+    <footer class="footer">
+      <div class="footer-inner-wrapper">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <a href="/"> Citizen Fitz </a>
+          </div>
+          <div class="footer-tagline">UX &amp; Front-end Specialist</div>
+          <div class="footer-copyright">© 2024 Zentropolis, Inc.</div>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-content">
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/profile.php?id=100086249347782"
+                class="social-icon facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://x.com/citizenfitz"
+                class="social-icon twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <ul class="footer-menu">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="https://calendly.com/fitzaco">Book a Call</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Basic JavaScript for interactivity
+      document.querySelector("button").addEventListener("click", function () {
+        alert("You clicked the button!");
+      });
+    </script>
+  </body>
+</html>
