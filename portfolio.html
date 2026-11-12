@@ -48,36 +48,56 @@
               ><span class="dropcap__letter">L</span>ooking for a contract or
               long-term hire?</b
             >
-            I specialize in building React applications for federal agencies and
-            enterprise systems. I've been shipping accessible, maintainable
-            frontends for 20+ years, from HRSA's multi-site Angular platform to
-            CPSC's internal modernization system. I specialize in 508 compliance
-            implementation, legacy system refactoring, and translating fuzzy
-            stakeholder requirements into highly usable solutions built with
-            clean, scalable code.
+            Lately I've been focused on spec-driven development: building
+            reliable AI agents around highly detailed instructions with
+            objectively measurable goals, human-in-the-loop checkpoints, and
+            copious guardrails to keep them from going rogue. It's the same
+            governance discipline I've brought to 20+ years of shipping
+            accessible, maintainable frontends for federal agencies and
+            enterprise systems, from HRSA's multi-site Angular platform to
+            CPSC's internal modernization system. I specialize in 508 and
+            regulatory compliance implementation, legacy system refactoring, and
+            translating fuzzy stakeholder requirements into highly usable
+            solutions built with clean, scalable code.
           </p>
 
           <h2 class="h2">Technical Capabilities</h2>
           <ul class="portfolio__project-meta-list">
             <li>
-              <b>Frontend Engineering:</b> React, TypeScript, modern JavaScript
-              (ES6+); scalable component architecture
+              <b>Applied AI:</b> AI orchestration, multi-agent patterns,
+              human-in-the-loop design, guardrails, prompt engineering, RAG;
+              Claude Code, Claude API, Cursor, MCP servers, SKILL.md / CLAUDE.md
+              / AGENTS.md
             </li>
             <li>
-              <b>Styling & Architecture:</b> SASS, responsive design, design
+              <b>AI Quality &amp; Governance:</b> Spec-driven development,
+              evaluation frameworks, benchmarking
+            </li>
+            <li>
+              <b>Frontend Engineering:</b> React, TypeScript, modern JavaScript
+              (ES6+), Angular; scalable component architecture
+            </li>
+            <li>
+              <b>Styling &amp; Architecture:</b> SASS, responsive design, design
               systems, reusable component libraries
             </li>
             <li>
               <b>Accessibility:</b> WCAG 2.1 AA, Section 508 compliance, ARIA,
-              screen reader and keyboard testing
+              screen reader and keyboard testing (JAWS, NVDA, WAVE, aXe,
+              Lighthouse)
             </li>
             <li>
-              <b>Backend (supporting role):</b> Node.js, Express, SQLite,
-              Firebase Authentication
+              <b>UX &amp; Research:</b> UX discovery, user testing, heuristic
+              evaluation, accessibility audits
             </li>
             <li>
-              <b>Tools:</b> Git, Jira, Agile/Scrum environments, Figma and Axure
-              for prototyping
+              <b>Backend (supporting role):</b> Node.js, Express, SQLite
+              (sqlite-vec), Firebase Authentication
+            </li>
+            <li><b>Platforms:</b> Shopify (Liquid), WordPress, MailerLite</li>
+            <li>
+              <b>Tools:</b> Git, GitHub, Jira, Agile/Scrum environments, Figma
+              and Axure for prototyping
             </li>
           </ul>
           <p class="resume-download">
@@ -95,8 +115,101 @@
 
       <section class="main-content__section main-content__section--alt">
         <div class="section-inner">
+          <h2 class="h2">Latest Projects</h2>
+          <!-- Latest projects start -->
+
+          <!-- Opportunity Evaluator -->
+          <article class="portfolio__section">
+            <h3 class="h3">
+              FitzaCo Opportunity Evaluator &mdash; in progress
+            </h3>
+            <ul class="portfolio__project-meta-list">
+              <li>
+                <strong>Tech:</strong> TypeScript, Node.js, React, Claude API,
+                SQLite
+              </li>
+            </ul>
+            <p>
+              A tool that answers one question: is this product idea worth
+              making? It ferrets through product notes and sources like Google
+              Trends (with Amazon sales and Reddit conversations planned) to
+              identify market gaps, then evaluates them for viability in general
+              and against specific business models. Unlike general "find me a
+              good idea" prompts, it runs on highly defined metrics and
+              guardrails to keep it on track and useful long term. "Golden
+              dataset", if you will, of similar products with known, measurable
+              success to weed out AI nonsense.
+            </p>
+          </article>
+
+          <!-- Agent Fleet -->
+          <article class="portfolio__section">
+            <h3 class="h3">Agent Fleet &mdash; ongoing</h3>
+            <ul class="portfolio__project-meta-list">
+              <li>
+                <strong>Tech:</strong> Claude, Grok, MCP servers, SKILL.md /
+                AGENTS.md, Google Workspace, Todoist
+              </li>
+            </ul>
+            <p>
+              A multi-agent staff of personal agents (bookkeeper, property
+              manager, secretary, researcher), each with only the keys it needs:
+              read-only by default, one agent allowed to spend money, and every
+              task orchestrated through a single coordinator agent. The real
+              work is in the SKILL.md and AGENTS.md rulebooks to make them
+              portable and act like the fat guy in the Star Wars X-wing droning
+              "Stay on target. Stay on target!" to keep them in line.
+            </p>
+          </article>
+
           <h2 class="h2">Featured Engineering Projects</h2>
           <!-- Portfolio items start -->
+
+          <!-- QuoDrox -->
+          <article class="portfolio__section">
+            <h3 class="h3">QuoDrox &mdash; 2026</h3>
+            <figure
+              class="portfolio__project-image-figure portfolio__project-image-figure--600"
+            >
+              <img
+                src="assets-img/portfolio/web-gallery-quodrox.jpg"
+                alt="QuoDrox Landing page"
+                class="portfolio__project-image"
+              />
+            </figure>
+            <ul class="portfolio__project-meta-list">
+              <li>
+                <strong>Tech:</strong> Shopify (Liquid, Dawn-based theme), HTML,
+                CSS (compiled SCSS), JavaScript, MailerLite integration, Claude
+                + MCP, Cursor, Grok, Git
+              </li>
+              <li><strong>Role:</strong> Solo Developer</li>
+              <li>
+                <strong>Link:</strong>
+                <a href="https://quodrox.com" target="_blank">QuoDrox.com</a>
+              </li>
+            </ul>
+
+            <div class="portfolio__project-summary">
+              Designed, built, and launched the store for QuoDrox, a line of
+              colorful wooden tiles for tabletop RPGs. The whimsical look was a
+              lot of fun to design. Behind the curtain the static site was built
+              for a clean Shopify migration from day one. The Liquid templating
+              was already in place, the component structure mapped cleanly to
+              Shopify's schema, and the SCSS was organized to survive the
+              transition without a rewrite. When it came time to move, I rebuilt
+              the store in Cursor as a fresh Dawn-based theme, with design
+              tokens driving the whole system and custom Liquid sections on top.
+            </div>
+
+            <p>
+              The store is also my test bed for applied AI. Every week Claude
+              builds a sales report from read-only Shopify and MailerLite
+              connectors (read-only by design; no agent can change store data),
+              and Grok Bot sends inventory alerts across both the Shopify store
+              and an Etsy store selling the same products.
+            </p>
+          </article>
 
           <!-- Meshperanto -->
           <article class="portfolio__section">
@@ -130,9 +243,10 @@
             </ul>
 
             <div class="portfolio__project-summary">
-              A word-level Huffman codec for Meshtastic LoRa mesh networks.
-              Compresses natural language messages by 1.5–2.5× so they travel
-              farther and arrive faster.
+              A word-level Huffman compression codec for Meshtastic LoRa mesh
+              networks. Compresses natural language messages by 1.5–2.5× so they
+              travel farther over the tight 237-byte packet limit and arrive
+              faster. Open-sourced with a React playground for live testing.
             </div>
 
             <p>
@@ -148,54 +262,13 @@
 
             <p>
               I built it in what I know: TypeScript, with a React playground for
-              testing. It works great, but honestly, it'd be far more useful in
-              C or Python so it could run in ESP32 chips and the like. Whether I
-              get there myself or find a collaborator if it catches on, we'll
-              see. For now it's a clean, well-tested open source library that
-              does exactly what it says on the tin. Besides, once I came up with
-              the fantastic name, "MESHPERANTO!" there was no way I couldn't
-              build it.
-            </p>
-          </article>
-
-          <!-- QuoDrox -->
-          <article class="portfolio__section">
-            <h3 class="h3">QuoDrox &mdash; 2026</h3>
-            <figure
-              class="portfolio__project-image-figure portfolio__project-image-figure--600"
-            >
-              <img
-                src="assets-img/portfolio/web-gallery-quodrox.jpg"
-                alt="QuoDrox Landing page"
-                class="portfolio__project-image"
-              />
-            </figure>
-            <ul class="portfolio__project-meta-list">
-              <li>
-                <strong>Tech:</strong> HTML, CSS (compiled SCSS), JavaScript,
-                Liquid templates, MailerLite integration
-              </li>
-              <li><strong>Role:</strong> Solo Developer</li>
-              <li>
-                <strong>Link:</strong>
-                <a href="https://quodrox.com" target="_blank">QuoDrox.com</a>
-              </li>
-            </ul>
-
-            <div class="portfolio__project-summary">
-              Landing page and waitlist system for QuoDrox, a set of colorful
-              wooden tiles for tabletop RPGs currently in development. Built
-              from scratch in static HTML with BEM CSS architecture and full
-              accessibility compliance, but designed from the start with a
-              Shopify migration in mind.
-            </div>
-
-            <p>
-              The whimsical look was a lot of fun to design. Behind the curtain
-              it's built for a clean Shopify migration when the product
-              launches. The Liquid templating is already in place, the component
-              structure maps cleanly to Shopify's schema, and the SCSS is
-              organized to survive the transition without a rewrite.
+              live testing. It works great, but honestly, it'd be far more
+              useful in C or Python so it could run on ESP32 chips and the like.
+              Whether I get there myself or find a collaborator if it catches
+              on, we'll see. For now it's a clean, well-tested open source
+              library that does exactly what it says on the tin. Besides, once I
+              came up with the fantastic name, "MESHPERANTO!" there was no way I
+              couldn't build it.
             </p>
           </article>
 
@@ -232,11 +305,11 @@
               </li>
             </ul>
             <div class="portfolio__project-summary">
-              AI-powered backstory generator combining old-school random tables
-              with modern LLMs (xAI API). Users quickly pick character traits,
-              the AI generates a coherent narrative from those constraints, then
-              they can regenerate specific sections they don't like without
-              losing the whole thread.
+              AI-powered backstory generator for tabletop RPGs combining
+              old-school random tables with modern LLMs (xAI API). Users quickly
+              pick character traits, the AI generates a coherent narrative from
+              those constraints, then they can regenerate specific sections they
+              don't like without losing the whole thread.
             </div>
 
             <p>
@@ -269,7 +342,7 @@
             >
               <img
                 src="assets-img/portfolio/web-gallery-dashs.jpg"
-                alt="Dashs of Old Town Screenshot"
+                alt="Dash's of Old Town Screenshot"
                 class="portfolio__project-image"
               />
             </figure>
@@ -317,7 +390,7 @@
             <ul class="portfolio__project-meta-list">
               <li>
                 <strong>Tech:</strong> React, SQLite, Express.js, Firebase Auth,
-                Node.js
+                Node.js, Cursor, Figma
               </li>
               <li>
                 <strong>Role:</strong> Frontend Engineer (Full-Stack Prototype)
@@ -326,23 +399,23 @@
             </ul>
 
             <div class="portfolio__project-summary">
-              A full-stack accountability platform for life coaches. React
-              frontend with real-time dashboards, Express/SQLite backend,
-              Firebase auth.
+              A full-stack 12 Week Year-style accountability platform for life
+              coaches, with goal setting, momentum scoring, and check-in
+              dashboards. React frontend with real-time dashboards,
+              Express/SQLite backend, Firebase auth.
             </div>
 
             <p>
               This was my first full-stack build where I owned the entire
               system, and I used Cursor extensively to accelerate development. I
-              handled the frontend architecture and React implementation myself
-              (that's my forte), but leveraged Cursor's AI assistance for
-              backend scaffolding, Express routing, and SQLite setup. The
-              result: I shipped a complete full-stack app in weeks instead of
-              months.
+              architected the frontend and built the React implementation myself
+              (that's my forte), but directed Cursor through backend
+              scaffolding, Express routing, and SQLite setup. The result: I
+              shipped a complete full-stack app in weeks instead of months.
             </p>
 
             <p>
-              Doing all this was a real eye opener. The future of software
+              Doing all this was a real eye-opener. The future of software
               development isn't extensive hand coding and memorization of
               abstruse syntax, it's having the experience and talent to
               architect, direct, and debug systems as they're built
@@ -365,12 +438,15 @@
             </p>
           </article>
 
-          <!-- Moblie Game UI-->
+          <!-- Mobile Game UI -->
           <article class="portfolio__section">
             <h3 class="h3">Squirl! Mobile Game UI &mdash; 2025</h3>
 
             <ul class="portfolio__project-meta-list">
-              <li><strong>Tech:</strong> React, SASS, HTML, Replit, Figma</li>
+              <li>
+                <strong>Tech:</strong> React, SASS, HTML, Replit, Figma,
+                Photoshop, Illustrator
+              </li>
               <li><strong>Role:</strong> Frontend Developer</li>
               <li>
                 <strong>Link:</strong> NDA, details available upon request
@@ -379,16 +455,18 @@
 
             <div class="portfolio__project-summary">
               Frontend development and UI design for an early-stage mobile game
-              startup.
+              startup. Took the founder's AI-built prototype to a launch-ready
+              product.
             </div>
             <p>
               A social mobile app that came to me as a working prototype built
               with AI-assisted coding tools. The foundation was solid but the
               architecture needed an experienced hand. First a lot of UX
-              consultation to define the goals and flows clearly followed by a
-              lot of code refactoring. Full details including client name are
-              under NDA, which is fairly standard for pre-launch products. Happy
-              to discuss the technical work in an interview setting.
+              consultation to define the goals and flows clearly, followed by
+              refactoring the architecture the AI tools couldn't get right. Full
+              details including client name are under NDA, which is fairly
+              standard for pre-launch products. Happy to discuss the technical
+              work in an interview setting.
             </p>
             <p>
               This sort of work is becoming increasingly common. Vibe coding is
@@ -412,9 +490,12 @@
             </figure>
             <ul class="portfolio__project-meta-list">
               <li>
-                <strong>Tools:</strong> React.js, SASS, WordPress Plugin API
+                <strong>Tools:</strong> React.js, SASS, WordPress Plugin API,
+                Cursor
               </li>
-              <li><strong>Role:</strong> Frontend Developer</li>
+              <li>
+                <strong>Role:</strong> UX Designer &amp; Frontend Developer
+              </li>
               <li>
                 <strong>Link:</strong>
                 <a
@@ -435,8 +516,9 @@
             <div class="portfolio__project-summary">
               Complex React app managing 50+ interconnected character creation
               fields with cascading dependencies. Deliberately avoided a
-              database so everything runs from JSON/Markdown files. Packaged as
-              a WordPress plugin to play nicely with the existing site.
+              database so everything runs from JSON/Markdown files. Hand-coded
+              in React, then converted to a WordPress plugin with AI assistance
+              in Cursor to play nicely with the existing site.
             </div>
             <p>
               For all the nostalgia over the "good old days" of simpler
@@ -480,12 +562,12 @@
             </figure>
             <ul class="portfolio__project-meta-list">
               <li>
-                <strong>Tech:</strong> React.js, SASS, Axure, Section508
-                accessibility testing
+                <strong>Tech:</strong> React.js, SASS, Axure, JAWS/NVDA/WAVE,
+                Section 508 accessibility testing
               </li>
               <li>
-                <strong>Role:</strong> Senior UX / Front-End Developer @
-                Publicis Sapient
+                <strong>Role:</strong> Senior Frontend Engineer @ Publicis
+                Sapient
               </li>
             </ul>
             <div class="portfolio__project-summary">
@@ -495,6 +577,9 @@
               start, not bolted on later. Had to extract actual requirements
               from fuzzy processes and build something flexible enough to handle
               shifting needs as the client clarified what they actually wanted.
+              Led UX discovery, produced wireframes and prototypes, ran
+              accessibility and usability testing, and presented design
+              decisions directly to agency stakeholders.
             </div>
             <p>
               The most vexing part of this project wasn't the React code; it was
@@ -536,20 +621,22 @@
             </figure>
             <ul class="portfolio__project-meta-list">
               <li>
-                <strong>Tech Stack:</strong> Angular, SASS, Accessibility
-                Standards, Axure
+                <strong>Tech Stack:</strong> Angular, SASS, WAVE, Section 508
+                Accessibility Standards, Axure
               </li>
               <li>
-                <strong>Role:</strong> Senior Frontend Developer @ Publicis
+                <strong>Role:</strong> Senior Frontend Engineer @ Publicis
                 Sapient
               </li>
             </ul>
             <div class="portfolio__project-summary">
-              Developed a component library and UX patterns deployed across 5+
-              federal healthcare websites. Built the Angular application from
-              beta through production, surviving complete rewrites when the
-              framework matured. Created reusable, accessibility-compliant
-              components used by multiple developer teams.
+              Defined UX patterns and built a reusable component library
+              deployed across 5+ federal healthcare websites. Built the Angular
+              application from beta through production, surviving complete
+              rewrites when the framework matured, while maintaining full
+              WCAG/Section 508 compliance. Created reusable,
+              accessibility-compliant components used by multiple developer
+              teams, and mentored team members on accessible component patterns.
             </div>
             <p>
               This project was a bear. We started with the beta version of
@@ -563,8 +650,9 @@
               By the time I rolled off, the app was motoring along smoothly. The
               project crises made for very rapid learning. Towards its end I was
               working with the UX team to create style and component conventions
-              across the various sub-apps and that was a satisfying close to the
-              ride.
+              across the various sub-apps and mentoring team members on
+              accessible component patterns, and that was a satisfying close to
+              the ride.
             </p>
           </article>
 
@@ -577,14 +665,16 @@
                 JavaScript
               </li>
               <li>
-                <strong>Role:</strong> Senior Frontend Developer @ Publicis
+                <strong>Role:</strong> Senior Frontend Engineer @ Publicis
                 Sapient
               </li>
             </ul>
             <div class="portfolio__project-summary">
               A hybrid mobile banking app (PhoneGap/Cordova). I led CSS
-              architecture and cross-platform styling to ensure visual
-              consistency across iOS, Android, and legacy devices.
+              architecture, cross-platform styling, and visual and interaction
+              design consistency across iOS, Android, and legacy devices,
+              ensuring a cohesive usability experience across a fragmented
+              device landscape.
             </div>
             <p>
               This was a hybrid mobile app built with PhoneGap for Pentagon
@@ -593,10 +683,10 @@
 
               That task turned out to be far more complicated than expected,
               thanks to the peculiarities of various mobile OSes and browsers.
-              Font rendering, layout, and z-index issues were my bane -
-              particularly on older browsers. I remember a teammate joking that
-              it would've been cheaper to just buy complaining users new phones
-              than spend days figuring out why something wasn't rendering
+              Font rendering, layout, and z-index issues were my
+              bane—particularly on older browsers. I remember a teammate joking
+              that it would've been cheaper to just buy complaining users new
+              phones than spend days figuring out why something wasn't rendering
               correctly on a three-year-old Android device.<br /><br />
 
               The final product was solid but hammered home why mobile
@@ -621,11 +711,11 @@
             </figure>
             <ul class="portfolio__project-meta-list">
               <li>
-                <strong>Tech Stack:</strong> HTML, CSS, JavaScript, 508
-                Standards
+                <strong>Tech Stack:</strong> Wireframing, HTML, CSS, JavaScript,
+                508 Standards
               </li>
               <li>
-                <strong>Role:</strong> Lead UX & Senior Frontend Developer @
+                <strong>Role:</strong> Lead UX &amp; Senior Frontend Developer @
                 DST/SDSE
               </li>
             </ul>
@@ -634,6 +724,8 @@
               effort where I led the redesign as a straightforward static site
               of HTML and CSS with 508 compliance. The heavy lift was lots of
               consensus building and navigating bureaucratic requirements.
+              Conducted a heuristic evaluation of the legacy site and handled
+              design sign-offs.
             </div>
             <p>
               This was a complete redesign of the Department of Energy's HR
@@ -649,7 +741,7 @@
               accessibility compliance. This remains my peak people-skills
               project, and in the end, they served me well. Everyone agreed.
               Everyone liked what was built. And no one saw a problem with
-              <em>"The Office of the Chief Human Capital Officer."</em>. Mission
+              <em>"The Office of the Chief Human Capital Officer."</em> Mission
               accomplished.<br /><br />
 
               <strong>Fun project story:</strong> While waiting to show my
@@ -685,7 +777,7 @@
             </ul>
             <div class="portfolio__project-summary">
               A large interactive training course for the National Registry of
-              Evidence-based Programs and Practices that need to be delivered
+              Evidence-based Programs and Practices that needed to be delivered
               both online and on CD-ROM.
             </div>
             <p>
@@ -697,11 +789,11 @@
 
               The interesting technical challenge came when we learned the
               course had to be usable on CD-ROM (those were the days, eh?). I
-              discovered magical WebMerge tool from 4th World Software. It let
-              us "mail-merge" our database-driven course into a static, portable
-              site that could run off a disc. I'm still a fan of WebMerge and
-              wager that many sites built today would work better with this
-              approach.<br /><br />
+              discovered the magical WebMerge tool from 4th World Software. It
+              let us "mail-merge" our database-driven course into a static,
+              portable site that could run off a disc. I'm still a fan of
+              WebMerge and wager that many sites built today would work better
+              with this approach.<br /><br />
 
               I think I loved doing this project because I got to be the captain
               of all things Web. I chose the tech stack, implemented the
