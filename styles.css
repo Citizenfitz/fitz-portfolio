@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* ********** FOUNDATION ********** */
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Codystar&family=Inter:wght@400;500;600;700&family=Kaushan+Script&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 body,
@@ -27,18 +28,18 @@ html {
 }
 
 .h1 {
-  font-size: clamp(2.1rem, calc(1.7rem + 1.3vw), 2.75rem);
-  margin-bottom: clamp(1.5rem, calc(1.364rem + 0.682vw), 2.13rem);
+  font-size: clamp(2.1rem, 1.7rem + 1.3vw, 2.75rem);
+  margin-bottom: clamp(1.5rem, 1.364rem + 0.682vw, 2.13rem);
 }
 
 .h2 {
-  font-size: clamp(1.6rem, calc(1.35rem + 0.85vw), 2.1rem);
-  margin-bottom: clamp(0.5rem, calc(0.455rem + 0.227vw), 0.75rem);
+  font-size: clamp(1.6rem, 1.35rem + 0.85vw, 2.1rem);
+  margin-bottom: clamp(0.5rem, 0.455rem + 0.227vw, 0.75rem);
 }
 
 .h3 {
-  font-size: clamp(1.4rem, calc(1.22rem + 0.65vw), 1.75rem);
-  margin-bottom: clamp(0.5rem, calc(0.455rem + 0.227vw), 0.75rem);
+  font-size: clamp(1.4rem, 1.22rem + 0.65vw, 1.75rem);
+  margin-bottom: clamp(0.5rem, 0.455rem + 0.227vw, 0.75rem);
 }
 
 p {
@@ -47,33 +48,33 @@ p {
 
 p,
 li {
-  font-size: clamp(1rem, calc(0.95rem + 0.3vw), 1.125rem);
+  font-size: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
   line-height: 1.6;
 }
 
 li {
-  margin-bottom: clamp(0.5rem, calc(0.455rem + 0.227vw), 0.75rem);
+  margin-bottom: clamp(0.5rem, 0.455rem + 0.227vw, 0.75rem);
 }
 
-ul:not(.nav-menu):not(.footer-menu) {
+ul:not(.nav-main__menu):not(.footer-menu) {
   list-style: none;
-  padding-left: clamp(2rem, calc(1.818rem + 0.909vw), 3rem);
+  padding-left: clamp(2rem, 1.818rem + 0.909vw, 3rem);
   margin-top: 0;
 }
-ul:not(.nav-menu):not(.footer-menu) li {
+ul:not(.nav-main__menu):not(.footer-menu) li {
   position: relative;
 }
-ul:not(.nav-menu):not(.footer-menu) li b,
-ul:not(.nav-menu):not(.footer-menu) li strong {
+ul:not(.nav-main__menu):not(.footer-menu) li b,
+ul:not(.nav-main__menu):not(.footer-menu) li strong {
   color: #244e82;
 }
-ul:not(.nav-menu):not(.footer-menu) li:before {
+ul:not(.nav-main__menu):not(.footer-menu) li:before {
   content: "◆";
   color: #f7c45f;
   position: absolute;
   left: -1.25em;
   top: -4px;
-  font-size: clamp(1.15rem, calc(1.06rem + 0.4vw), 1.32rem);
+  font-size: clamp(1.15rem, 1.06rem + 0.4vw, 1.32rem);
 }
 
 figure {
@@ -83,23 +84,50 @@ figure {
 blockquote {
   font-size: clamp(2.6rem, 6vw, 4.25rem);
   line-height: 1.3;
-  margin: clamp(2rem, calc(1.818rem + 0.909vw), 3rem);
+  margin: clamp(2rem, 1.818rem + 0.909vw, 3rem);
   font-family: "Kaushan Script", cursive;
   color: #f7c45f;
   text-align: center;
 }
 
+a .fa-arrow-up-right-from-square {
+  font-size: clamp(0.8rem, 0.76rem + 0.2vw, 0.9rem);
+  margin-left: clamp(0.5rem, 0.455rem + 0.227vw, 0.75rem);
+  opacity: 0.7;
+}
+
+/* ****************** MEDIA QUERIES ****************** */
+@media (max-width: 992px) {
+  blockquote {
+    margin: clamp(0.75rem, 0.682rem + 0.341vw, 1rem);
+  }
+}
+@media (max-width: 768px) {
+  blockquote {
+    margin-top: clamp(0.5rem, 0.455rem + 0.227vw, 0.75rem);
+    margin-bottom: clamp(0.5rem, 0.455rem + 0.227vw, 0.75rem);
+    margin-left: clamp(0.75rem, 0.682rem + 0.341vw, 1rem);
+    margin-right: clamp(0.75rem, 0.682rem + 0.341vw, 1rem);
+    line-height: 1.6;
+  }
+}
+@media (max-width: 576px) {
+  blockquote {
+    margin: clamp(0.5rem, 0.455rem + 0.227vw, 0.75rem);
+  }
+}
+/* ********** COMPONENTS ********** */
 .btn,
 .site-header li a.btn {
   display: inline-block;
-  margin-block: clamp(1.25rem, calc(1.136rem + 0.568vw), 1.75rem);
-  padding-block: clamp(0.75rem, calc(0.682rem + 0.341vw), 1rem);
-  padding-inline: clamp(1.25rem, calc(1.136rem + 0.568vw), 1.75rem);
+  margin-block: clamp(1.25rem, 1.136rem + 0.568vw, 1.75rem);
+  padding-block: clamp(0.75rem, 0.682rem + 0.341vw, 1rem);
+  padding-inline: clamp(1.25rem, 1.136rem + 0.568vw, 1.75rem);
   background-color: #f7c45f;
   color: #244e82;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-size: clamp(0.9rem, calc(0.86rem + 0.25vw), 1rem);
+  font-size: clamp(0.9rem, 0.86rem + 0.25vw, 1rem);
   text-decoration: none;
   border-radius: 5px;
   font-weight: 600;
@@ -111,19 +139,19 @@ blockquote {
 }
 .btn--resume,
 .site-header li a.btn--resume {
-  padding-block: clamp(1rem, calc(0.909rem + 0.455vw), 1.38rem);
-  padding-inline: clamp(1.25rem, calc(1.136rem + 0.568vw), 1.75rem);
+  padding-block: clamp(1rem, 0.909rem + 0.455vw, 1.38rem);
+  padding-inline: clamp(1.25rem, 1.136rem + 0.568vw, 1.75rem);
 }
 .btn--resume i,
 .site-header li a.btn--resume i {
-  margin-right: clamp(0.75rem, calc(0.682rem + 0.341vw), 1rem);
-  font-size: clamp(1.15rem, calc(1.06rem + 0.4vw), 1.32rem);
+  margin-right: clamp(0.75rem, 0.682rem + 0.341vw, 1rem);
+  font-size: clamp(1.15rem, 1.06rem + 0.4vw, 1.32rem);
 }
 .btn--nav-cta,
 .site-header li a.btn--nav-cta {
   display: inline;
-  padding-block: clamp(0.5rem, calc(0.455rem + 0.227vw), 0.75rem);
-  padding-inline: clamp(0.75rem, calc(0.682rem + 0.341vw), 1rem);
+  padding-block: clamp(0.5rem, 0.455rem + 0.227vw, 0.75rem);
+  padding-inline: clamp(0.75rem, 0.682rem + 0.341vw, 1rem);
   margin: 0;
   color: #173753;
 }
@@ -131,7 +159,7 @@ blockquote {
 .main-content {
   color: #173753;
   background-color: white;
-  padding-top: clamp(0.75rem, calc(0.682rem + 0.341vw), 1rem);
+  padding-top: clamp(0.75rem, 0.682rem + 0.341vw, 1rem);
 }
 .main-content a:not(.btn) {
   color: #286fa8;
@@ -144,43 +172,37 @@ blockquote {
 .main-content__section {
   padding-top: 1em;
   padding-bottom: 1em;
-  padding-left: clamp(2.5rem, calc(2rem + 1.2vw), 4rem);
-  padding-right: clamp(2.5rem, calc(2rem + 1.2vw), 4rem);
+  padding-left: clamp(2.5rem, 2rem + 1.2vw, 4rem);
+  padding-right: clamp(2.5rem, 2rem + 1.2vw, 4rem);
 }
 @media (max-width: 768px) {
   .main-content__section {
     padding-top: 1em;
     padding-bottom: 1em;
-    padding-left: clamp(2rem, calc(1.818rem + 0.909vw), 3rem);
-    padding-right: clamp(2rem, calc(1.818rem + 0.909vw), 3rem);
+    padding-left: clamp(2rem, 1.818rem + 0.909vw, 3rem);
+    padding-right: clamp(2rem, 1.818rem + 0.909vw, 3rem);
   }
 }
 @media (max-width: 576px) {
   .main-content__section {
     padding-top: 1em;
     padding-bottom: 1em;
-    padding-left: clamp(1.25rem, calc(1.136rem + 0.568vw), 1.75rem);
-    padding-right: clamp(1.25rem, calc(1.136rem + 0.568vw), 1.75rem);
+    padding-left: clamp(1.25rem, 1.136rem + 0.568vw, 1.75rem);
+    padding-right: clamp(1.25rem, 1.136rem + 0.568vw, 1.75rem);
   }
 }
-.main-content__section-alt, .main-content__section-alt-2 {
+.main-content__section--alt, .main-content__section--alt-2 {
   background: #e7eff8;
-  padding-top: clamp(2rem, calc(1.818rem + 0.909vw), 3rem);
-  padding-bottom: clamp(2rem, calc(1.818rem + 0.909vw), 3rem);
+  padding-top: clamp(2rem, 1.818rem + 0.909vw, 3rem);
+  padding-bottom: clamp(2rem, 1.818rem + 0.909vw, 3rem);
 }
-.main-content__section-alt-2 {
+.main-content__section--alt-2 {
   background: #f6efef;
 }
 
 .section-inner {
   max-width: 800px;
   margin: 0 auto;
-}
-
-a .fa-arrow-up-right-from-square {
-  font-size: clamp(0.8rem, calc(0.76rem + 0.2vw), 0.9rem);
-  margin-left: clamp(0.5rem, calc(0.455rem + 0.227vw), 0.75rem);
-  opacity: 0.7;
 }
 
 .dropcap {
@@ -192,30 +214,15 @@ a .fa-arrow-up-right-from-square {
   line-height: 1em;
   font-family: "Kaushan Script", cursive;
   float: left;
-  margin-right: clamp(0.5rem, calc(0.455rem + 0.227vw), 0.75rem);
+  margin-right: clamp(0.5rem, 0.455rem + 0.227vw, 0.75rem);
 }
 
-/* ****************** MEDIA QUERIES ****************** */
-@media (max-width: 992px) {
-  blockquote {
-    margin: clamp(0.75rem, calc(0.682rem + 0.341vw), 1rem);
-  }
-}
-@media (max-width: 768px) {
-  blockquote {
-    margin-top: clamp(0.5rem, calc(0.455rem + 0.227vw), 0.75rem);
-    margin-bottom: clamp(0.5rem, calc(0.455rem + 0.227vw), 0.75rem);
-    margin-left: clamp(0.75rem, calc(0.682rem + 0.341vw), 1rem);
-    margin-right: clamp(0.75rem, calc(0.682rem + 0.341vw), 1rem);
-    line-height: 1.6;
-  }
-}
 .headshot {
   float: left;
   margin-top: 0;
   margin-left: 0;
-  margin-right: clamp(0.75rem, calc(0.682rem + 0.341vw), 1rem);
-  margin-bottom: clamp(0.5rem, calc(0.455rem + 0.227vw), 0.75rem);
+  margin-right: clamp(0.75rem, 0.682rem + 0.341vw, 1rem);
+  margin-bottom: clamp(0.5rem, 0.455rem + 0.227vw, 0.75rem);
   max-width: 150px;
   border-radius: 5px;
 }
@@ -226,15 +233,10 @@ a .fa-arrow-up-right-from-square {
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: clamp(2rem, calc(1.818rem + 0.909vw), 3rem);
+    margin-bottom: clamp(2rem, 1.818rem + 0.909vw, 3rem);
   }
 }
 
-@media (max-width: 576px) {
-  blockquote {
-    margin: clamp(0.5rem, calc(0.455rem + 0.227vw), 0.75rem);
-  }
-}
 .site-header {
   background: linear-gradient(135deg, #4a2c2a 0%, #2f1c1a 25%, #4a2c2a 50%, #2f1c1a 75%, #4a2c2a 100%);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -247,54 +249,54 @@ a .fa-arrow-up-right-from-square {
 .nav-main {
   max-width: 800px;
   margin: 0 auto;
-  padding-block: clamp(1rem, calc(0.909rem + 0.455vw), 1.38rem);
-  padding-inline: clamp(2.5rem, calc(2rem + 1.2vw), 4rem);
+  padding-block: clamp(1rem, 0.909rem + 0.455vw, 1.38rem);
+  padding-inline: clamp(2.5rem, 2rem + 1.2vw, 4rem);
 }
 @media (max-width: 576px) {
   .nav-main {
-    padding-top: clamp(0.75rem, calc(0.682rem + 0.341vw), 1rem);
-    padding-bottom: clamp(0.75rem, calc(0.682rem + 0.341vw), 1rem);
-    padding-left: clamp(1.25rem, calc(1.136rem + 0.568vw), 1.75rem);
-    padding-right: clamp(1.25rem, calc(1.136rem + 0.568vw), 1.75rem);
+    padding-top: clamp(0.75rem, 0.682rem + 0.341vw, 1rem);
+    padding-bottom: clamp(0.75rem, 0.682rem + 0.341vw, 1rem);
+    padding-left: clamp(1.25rem, 1.136rem + 0.568vw, 1.75rem);
+    padding-right: clamp(1.25rem, 1.136rem + 0.568vw, 1.75rem);
   }
 }
 
-.nav-container {
+.nav-main__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
 }
 
-.nav-logo {
+.nav-main__logo {
   font-family: "Kaushan Script", cursive;
-  font-size: clamp(1.25rem, calc(1.12rem + 0.5vw), 1.5rem);
+  font-size: clamp(1.25rem, 1.12rem + 0.5vw, 1.5rem);
   color: #c3d6ee;
   text-decoration: none;
   font-weight: 700;
   z-index: 2;
   transition: color 0.3s ease;
 }
-.nav-logo:hover {
+.nav-main__logo:hover {
   color: #f7c45f;
 }
 
-.nav-toggle {
+.nav-main__toggle {
   display: none;
   background: none;
   border: none;
   color: #c3d6ee;
-  font-size: clamp(1.15rem, calc(1.06rem + 0.4vw), 1.32rem);
-  padding: clamp(0.5rem, calc(0.455rem + 0.227vw), 0.75rem);
+  font-size: clamp(1.15rem, 1.06rem + 0.4vw, 1.32rem);
+  padding: clamp(0.5rem, 0.455rem + 0.227vw, 0.75rem);
   cursor: pointer;
   z-index: 2;
   transition: color 0.3s ease;
 }
-.nav-toggle:hover {
+.nav-main__toggle:hover {
   color: #f7c45f;
 }
 
-.nav-menu {
+.nav-main__menu {
   display: flex;
   gap: 2rem;
   list-style: none;
@@ -302,22 +304,22 @@ a .fa-arrow-up-right-from-square {
   padding: 0;
   z-index: 1;
 }
-.nav-menu li:before {
+.nav-main__menu li:before {
   display: none;
 }
-.nav-menu a {
+.nav-main__menu a {
   color: #c3d6ee;
   text-decoration: none;
   font-weight: 700;
   transition: all 0.3s ease;
   position: relative;
-  font-size: clamp(0.8rem, calc(0.76rem + 0.2vw), 0.9rem);
+  font-size: clamp(0.8rem, 0.76rem + 0.2vw, 0.9rem);
   text-transform: uppercase;
 }
-.nav-menu a:hover {
+.nav-main__menu a:hover {
   color: #f7c45f;
 }
-.nav-menu a::after {
+.nav-main__menu a::after {
   content: "";
   position: absolute;
   width: 0;
@@ -327,16 +329,15 @@ a .fa-arrow-up-right-from-square {
   background-color: #f7c45f;
   transition: width 0.3s ease;
 }
-.nav-menu a:hover::after {
+.nav-main__menu a:hover::after {
   width: 100%;
 }
 
 @media (max-width: 768px) {
-  .nav-toggle {
+  .nav-main__toggle {
     display: block;
   }
-
-  .nav-menu {
+  .nav-main__menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -345,8 +346,8 @@ a .fa-arrow-up-right-from-square {
     background: linear-gradient(135deg, #4a2c2a 0%, #2f1c1a 25%, #4a2c2a 50%, #2f1c1a 75%, #4a2c2a 100%);
     padding-top: clamp(3rem, 5vw, 5.5rem);
     padding-bottom: clamp(3rem, 5vw, 5.5rem);
-    padding-left: clamp(2rem, calc(1.818rem + 0.909vw), 3rem);
-    padding-right: clamp(2rem, calc(1.818rem + 0.909vw), 3rem);
+    padding-left: clamp(2rem, 1.818rem + 0.909vw, 3rem);
+    padding-right: clamp(2rem, 1.818rem + 0.909vw, 3rem);
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -356,30 +357,35 @@ a .fa-arrow-up-right-from-square {
     align-items: center;
     justify-content: center;
   }
-  .nav-menu.is-active {
+  .nav-main__menu.is-active {
     transform: translateY(0);
   }
-  .nav-menu a {
-    padding: clamp(0.75rem, calc(0.682rem + 0.341vw), 1rem);
+  .nav-main__menu a {
+    padding: clamp(0.75rem, 0.682rem + 0.341vw, 1rem);
   }
-  .nav-menu a::after {
+  .nav-main__menu a::after {
     height: 3px;
     bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .nav-main__menu {
+    gap: 1rem;
   }
 }
 .footer {
   width: 100%;
   background-color: #173753;
   color: #c3d6ee;
-  padding-top: clamp(2rem, calc(1.818rem + 0.909vw), 3rem);
-  padding-bottom: clamp(2rem, calc(1.818rem + 0.909vw), 3rem);
+  padding-top: clamp(2rem, 1.818rem + 0.909vw, 3rem);
+  padding-bottom: clamp(2rem, 1.818rem + 0.909vw, 3rem);
   background: linear-gradient(135deg, #4a2c2a 0%, #2f1c1a 25%, #4a2c2a 50%, #2f1c1a 75%, #4a2c2a 100%);
 }
 .footer__container {
   max-width: 800px;
   margin: 0 auto;
-  padding-left: clamp(2rem, calc(1.818rem + 0.909vw), 3rem);
-  padding-right: clamp(2rem, calc(1.818rem + 0.909vw), 3rem);
+  padding-left: clamp(2rem, 1.818rem + 0.909vw, 3rem);
+  padding-right: clamp(2rem, 1.818rem + 0.909vw, 3rem);
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -388,8 +394,8 @@ a .fa-arrow-up-right-from-square {
   text-align: left;
 }
 .footer__title {
-  font-size: clamp(1.15rem, calc(1.06rem + 0.4vw), 1.32rem);
-  margin-bottom: clamp(0.5rem, calc(0.455rem + 0.227vw), 0.75rem);
+  font-size: clamp(1.15rem, 1.06rem + 0.4vw, 1.32rem);
+  margin-bottom: clamp(0.5rem, 0.455rem + 0.227vw, 0.75rem);
 }
 .footer__title a {
   color: #c3d6ee;
@@ -401,12 +407,12 @@ a .fa-arrow-up-right-from-square {
   color: #f7c45f;
 }
 .footer__tagline {
-  font-size: clamp(0.9rem, calc(0.86rem + 0.25vw), 1rem);
-  margin-bottom: clamp(0.5rem, calc(0.455rem + 0.227vw), 0.75rem);
+  font-size: clamp(0.9rem, 0.86rem + 0.25vw, 1rem);
+  margin-bottom: clamp(0.5rem, 0.455rem + 0.227vw, 0.75rem);
   opacity: 0.8;
 }
 .footer__copyright {
-  font-size: clamp(0.8rem, calc(0.76rem + 0.2vw), 0.9rem);
+  font-size: clamp(0.8rem, 0.76rem + 0.2vw, 0.9rem);
   opacity: 0.6;
 }
 .footer__nav {
@@ -418,7 +424,7 @@ a .fa-arrow-up-right-from-square {
   margin: 0;
 }
 .footer__menu li {
-  margin-bottom: clamp(0.5rem, calc(0.455rem + 0.227vw), 0.75rem);
+  margin-bottom: clamp(0.5rem, 0.455rem + 0.227vw, 0.75rem);
 }
 .footer__menu li:before {
   display: none;
@@ -426,17 +432,13 @@ a .fa-arrow-up-right-from-square {
 .footer__menu a {
   color: #c3d6ee;
   text-decoration: none;
-  font-size: clamp(0.9rem, calc(0.86rem + 0.25vw), 1rem);
+  font-size: clamp(0.9rem, 0.86rem + 0.25vw, 1rem);
 }
 .footer__menu a:hover {
   color: #f7c45f;
 }
 
 @media (max-width: 768px) {
-  .nav-menu {
-    gap: 1rem;
-  }
-
   .footer__container {
     flex-direction: column;
     align-items: center;
@@ -465,8 +467,8 @@ a .fa-arrow-up-right-from-square {
   color: #c3d6ee;
   text-align: center;
   min-height: 70vh;
-  margin-bottom: clamp(1.25rem, calc(1.136rem + 0.568vw), 1.75rem);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("img/cf-hero.webp");
+  margin-bottom: clamp(1.25rem, 1.136rem + 0.568vw, 1.75rem);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("assets-img/cf-hero.webp");
   background-size: cover;
   background-position: center;
   border-bottom: 2px solid #f7c45f;
@@ -495,7 +497,7 @@ a .fa-arrow-up-right-from-square {
   font-family: "Kaushan Script", cursive;
 }
 .hero__subheader {
-  font-size: clamp(1.15rem, calc(1.06rem + 0.4vw), 1.32rem);
+  font-size: clamp(1.15rem, 1.06rem + 0.4vw, 1.32rem);
   text-transform: uppercase;
   font-weight: 400;
   margin-top: -10px;
@@ -503,14 +505,15 @@ a .fa-arrow-up-right-from-square {
   font-family: "Inter", sans-serif;
 }
 
+/* ********** PAGES ********** */
 .portfolio__section {
-  margin-bottom: clamp(2.5rem, calc(2rem + 1.2vw), 4rem);
+  margin-bottom: clamp(2.5rem, 2rem + 1.2vw, 4rem);
 }
 .portfolio__header-divider {
   font-family: "Inter", sans-serif;
   text-align: center;
-  margin-bottom: clamp(1.5rem, calc(1.364rem + 0.682vw), 2.13rem);
-  font-size: clamp(1.15rem, calc(1.06rem + 0.4vw), 1.32rem);
+  margin-bottom: clamp(1.5rem, 1.364rem + 0.682vw, 2.13rem);
+  font-size: clamp(1.15rem, 1.06rem + 0.4vw, 1.32rem);
   text-transform: uppercase;
   display: none;
 }
@@ -519,22 +522,22 @@ a .fa-arrow-up-right-from-square {
   color: #244e82;
 }
 .portfolio__project-summary {
-  padding-block: clamp(0.5rem, calc(0.455rem + 0.227vw), 0.75rem);
-  padding-inline: clamp(0.75rem, calc(0.682rem + 0.341vw), 1rem);
-  margin-bottom: clamp(1rem, calc(0.909rem + 0.455vw), 1.38rem);
+  padding-block: clamp(0.5rem, 0.455rem + 0.227vw, 0.75rem);
+  padding-inline: clamp(0.75rem, 0.682rem + 0.341vw, 1rem);
+  margin-bottom: clamp(1rem, 0.909rem + 0.455vw, 1.38rem);
   background: #c3d6ee;
-  font-size: clamp(1rem, calc(0.95rem + 0.3vw), 1.125rem);
+  font-size: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
   border-radius: 8px;
 }
 .portfolio__project {
-  margin-bottom: clamp(2.5rem, calc(2rem + 1.2vw), 4rem);
+  margin-bottom: clamp(2.5rem, 2rem + 1.2vw, 4rem);
   line-height: 1.3;
 }
 .portfolio__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-bottom: clamp(2rem, calc(1.818rem + 0.909vw), 3rem);
+  margin-bottom: clamp(2rem, 1.818rem + 0.909vw, 3rem);
 }
 .portfolio__grid--half {
   grid-template-columns: repeat(2, 1fr);
@@ -552,22 +555,21 @@ a .fa-arrow-up-right-from-square {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 .portfolio__project-image-figure {
-  margin-bottom: clamp(2rem, calc(1.818rem + 0.909vw), 3rem);
+  margin-bottom: clamp(2rem, 1.818rem + 0.909vw, 3rem);
 }
 .portfolio__project-image-figure--600 {
   max-width: 600px;
-  margin-bottom: clamp(0.75rem, calc(0.682rem + 0.341vw), 1rem);
+  margin-bottom: clamp(0.75rem, 0.682rem + 0.341vw, 1rem);
 }
 .portfolio__project-image-figcaption {
-  font-size: clamp(0.8rem, calc(0.76rem + 0.2vw), 0.9rem);
+  font-size: clamp(0.8rem, 0.76rem + 0.2vw, 0.9rem);
   color: #244e82;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: clamp(0.5rem, calc(0.455rem + 0.227vw), 0.75rem);
+  margin-top: clamp(0.5rem, 0.455rem + 0.227vw, 0.75rem);
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 0;
   text-align: center;
 }
-
-/*# sourceMappingURL=styles.css.map */
+/* ********** UTILITIES (ALWAYS LAST) ********** */

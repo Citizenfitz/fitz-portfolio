@@ -1,16 +1,19 @@
-// Import utilities first
-@import "variables";
-@import "mixins";
+/* ********** FOUNDATION ********** */
+@use "variables" as *;
+@use "mixins" as *;
+@use "base";
 
-// Base styles
-@import "base";
+/* ********** COMPONENTS ********** */
+@use "component-button";
+@use "component-main-content";
+@use "component-dropcap";
+@use "component-headshot";
+@use "component-header";
+@use "component-footer";
+@use "component-hero";
 
-// Components
-@import "header-and-footer";
-@import "hero";
+/* ********** PAGES ********** */
+@use "page-portfolio";
 
-// pages
-@import "portfolio";
-
-// utilities - last for specificity
-@import "utilities";
+/* ********** UTILITIES (ALWAYS LAST) ********** */
+@use "utilities";

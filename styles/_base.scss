@@ -1,3 +1,9 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Codystar&family=Inter:wght@400;500;600;700&family=Kaushan+Script&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
 body,
 html {
   margin: 0;
@@ -52,7 +58,7 @@ li {
   @include fluid-space("xs", margin-bottom);
 }
 
-ul:not(.nav-menu):not(.footer-menu) {
+ul:not(.nav-main__menu):not(.footer-menu) {
   list-style: none;
   // padding-left: $spacing-md;
   @include fluid-space("xxl", padding-left);
@@ -90,93 +96,6 @@ blockquote {
   text-align: center;
 }
 
-.btn,
-.site-header li a.btn {
-  display: inline-block;
-  @include fluid-space("lg", margin-block);
-  @include fluid-space("sm", padding-block);
-  @include fluid-space("lg", padding-inline);
-  background-color: $color-text-accent;
-  color: $color-primary;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  @include fluid-size("sm");
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: $font-weight-semibold;
-  transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: $color-text-accent-hover;
-  }
-
-  &--resume {
-    // padding: 15px 25px;
-    @include fluid-space("md", padding-block);
-    @include fluid-space("lg", padding-inline);
-    i {
-      @include fluid-space("sm", margin-right);
-      @include fluid-size("h5");
-    }
-  }
-  &--nav-cta {
-    display: inline;
-    @include fluid-space("xs", padding-block);
-    @include fluid-space("sm", padding-inline);
-    margin: 0;
-    color: $color-text;
-  }
-}
-
-.resume-download {
-  // text-align: center;
-}
-
-.main-content {
-  @include theme-main;
-  @include fluid-space("sm", padding-top);
-
-  &__section {
-    // padding: 1em $spacing-lg;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    @include fluid-space("giant", padding-left);
-    @include fluid-space("giant", padding-right);
-    @media (max-width: $breakpoint-md) {
-      // padding: 1em $spacing-md-alt;
-      padding-top: 1em;
-      padding-bottom: 1em;
-      @include fluid-space("xxl", padding-left);
-      @include fluid-space("xxl", padding-right);
-    }
-
-    @media (max-width: $breakpoint-sm) {
-      // padding: 1em $spacing-sm-alt;
-      padding-top: 1em;
-      padding-bottom: 1em;
-      @include fluid-space("lg", padding-left);
-      @include fluid-space("lg", padding-right);
-    }
-  }
-  &__section-alt,
-  &__section-alt-2 {
-    background: $color-primary-super-light;
-    // padding-top: 3rem;
-    // padding-bottom: 3rem;
-    @include fluid-space("xxl", padding-top);
-    @include fluid-space("xxl", padding-bottom);
-  }
-
-  &__section-alt-2 {
-    background: $color-secondary-light;
-  }
-}
-
-.section-inner {
-  max-width: $container-blog;
-  margin: 0 auto;
-}
-
 a {
   .fa-arrow-up-right-from-square {
     // font-size: 0.8em;
@@ -184,20 +103,6 @@ a {
     // margin-left: 0.3em;
     @include fluid-space("xs", margin-left);
     opacity: 0.7;
-  }
-}
-
-.dropcap {
-  color: $color-primary;
-  text-transform: uppercase;
-  &__letter {
-    // font-size: 4em;
-    @include fluid-size("giant");
-    line-height: 1em;
-    font-family: $font-header;
-    float: left;
-    // margin-right: 0.1em;
-    @include fluid-space("xs", margin-right);
   }
 }
 
@@ -250,28 +155,6 @@ a {
       // font-size: 2.5em; // Reduced from 3.5em
       // @include fluid-size("giant"); // no longer needed – fluid handles scaling
     }
-  }
-}
-
-// ************* ABOUT ME Headshot *************
-.headshot {
-  float: left;
-  // margin: 0 $spacing-sm $spacing-xs 0;
-  margin-top: 0;
-  margin-left: 0;
-  @include fluid-space("sm", margin-right);
-  @include fluid-space("xs", margin-bottom);
-  max-width: 150px;
-  border-radius: 5px;
-
-  @media (max-width: $breakpoint-sm) {
-    float: none;
-    display: block;
-    // margin: 0 auto $spacing-md;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    @include fluid-space("xxl", margin-bottom);
   }
 }
 

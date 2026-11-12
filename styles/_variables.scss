@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Codystar&family=Inter:wght@400;500;600;700&family=Kaushan+Script&display=swap");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
-
 // Typography
 $font-body: "Inter", sans-serif;
 $font-header: "Kaushan Script", cursive;
@@ -114,15 +111,6 @@ $fluid-sizes: (
   "pythonic": clamp(4rem, 12vw, 7rem), // keep your outlier
 );
 
-@mixin fluid-size($level) {
-  @if map-has-key($fluid-sizes, $level) {
-    font-size: map-get($fluid-sizes, $level);
-  } @else {
-    @warn "No fluid size defined for #{$level}. Using fallback.";
-    font-size: 1rem; // or throw error if preferred
-  }
-}
-
 $fluid-spacings: (
   "xs": clamp(0.5rem, calc(0.455rem + 0.227vw), 0.75rem),
   "sm": clamp(0.75rem, calc(0.682rem + 0.341vw), 1rem),
@@ -135,13 +123,3 @@ $fluid-spacings: (
   "pythonic": clamp(3rem, 5vw, 5.5rem),
   "titanic": clamp(4.5rem, 6vw, 7.5rem),
 );
-
-// Mixin to apply fluid spacing
-@mixin fluid-space($level, $property: margin) {
-  @if map-has-key($fluid-spacings, $level) {
-    #{$property}: map-get($fluid-spacings, $level);
-  } @else {
-    @warn "Undefined spacing level: #{$level}. Using 'md' fallback.";
-    #{$property}: map-get($fluid-spacings, "medium");
-  }
-}

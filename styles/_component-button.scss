@@ -1,0 +1,40 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.btn,
+.site-header li a.btn {
+  display: inline-block;
+  @include fluid-space("lg", margin-block);
+  @include fluid-space("sm", padding-block);
+  @include fluid-space("lg", padding-inline);
+  background-color: $color-text-accent;
+  color: $color-primary;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  @include fluid-size("sm");
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: $font-weight-semibold;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $color-text-accent-hover;
+  }
+
+  &--resume {
+    // padding: 15px 25px;
+    @include fluid-space("md", padding-block);
+    @include fluid-space("lg", padding-inline);
+    i {
+      @include fluid-space("sm", margin-right);
+      @include fluid-size("h5");
+    }
+  }
+  &--nav-cta {
+    display: inline;
+    @include fluid-space("xs", padding-block);
+    @include fluid-space("sm", padding-inline);
+    margin: 0;
+    color: $color-text;
+  }
+}

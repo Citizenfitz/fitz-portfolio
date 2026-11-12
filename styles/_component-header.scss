@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "mixins" as *;
+
 // Header & Navigation
 .site-header {
   background: linear-gradient(
@@ -37,14 +40,14 @@
   }
 }
 
-.nav-container {
+.nav-main__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
 }
 
-.nav-logo {
+.nav-main__logo {
   font-family: $font-header;
   @include fluid-size("h4");
   color: $color-text-light;
@@ -58,7 +61,7 @@
   }
 }
 
-.nav-toggle {
+.nav-main__toggle {
   display: none;
   background: none;
   border: none;
@@ -76,7 +79,7 @@
   }
 }
 
-.nav-menu {
+.nav-main__menu {
   display: flex;
   gap: 2rem;
   list-style: none;
@@ -121,11 +124,11 @@
 }
 
 @media (max-width: $breakpoint-md) {
-  .nav-toggle {
+  .nav-main__toggle {
     display: block;
   }
 
-  .nav-menu {
+  .nav-main__menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -170,141 +173,19 @@
     }
   }
 
-  .nav-logo {
+  .nav-main__logo {
     // font-size: $font-size-lg;
     // @include fluid-size("h5"); // no longer needed – fluid handles scaling
-  }
-}
-
-// Footer
-.footer {
-  width: 100%;
-  background-color: $color-bg-header;
-  color: $color-text-light;
-  // padding: $spacing-md 0;
-  @include fluid-space("xxl", padding-top);
-  @include fluid-space("xxl", padding-bottom);
-  background: linear-gradient(
-    135deg,
-    $color-secondary 0%,
-    $color-secondary-dark 25%,
-    $color-secondary 50%,
-    $color-secondary-dark 75%,
-    $color-secondary 100%
-  );
-
-  &__container {
-    max-width: $container-blog;
-    margin: 0 auto;
-    // padding: 0 $spacing-md;
-    @include fluid-space("xxl", padding-left);
-    @include fluid-space("xxl", padding-right);
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  &__branding {
-    text-align: left;
-  }
-
-  &__title {
-    // font-size: $font-size-xl;
-    @include fluid-size("h5");
-    // margin-bottom: $spacing-xs;
-    @include fluid-space("xs", margin-bottom);
-
-    a {
-      color: $color-text-light;
-      text-decoration: none;
-      font-family: $font-header;
-      font-weight: $font-weight-bold;
-
-      &:hover {
-        color: $color-text-accent;
-      }
-    }
-  }
-
-  &__tagline {
-    // font-size: $font-size-sm;
-    @include fluid-size("sm");
-    // margin-bottom: $spacing-xs;
-    @include fluid-space("xs", margin-bottom);
-    opacity: 0.8;
-  }
-
-  &__copyright {
-    // font-size: $font-size-xs;
-    @include fluid-size("xs");
-    opacity: 0.6;
-  }
-
-  &__nav {
-    text-align: right;
-  }
-
-  &__menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    li {
-      // margin-bottom: $spacing-xs;
-      @include fluid-space("xs", margin-bottom);
-      &:before {
-        display: none;
-      }
-    }
-
-    a {
-      color: $color-text-light;
-      text-decoration: none;
-      // font-size: $font-size-sm;
-      @include fluid-size("sm");
-
-      &:hover {
-        color: $color-text-accent;
-      }
-    }
   }
 }
 
 @media (max-width: $breakpoint-md) {
-  .nav-menu {
+  .nav-main__menu {
     gap: 1rem;
   }
 
-  .nav-logo {
+  .nav-main__logo {
     // font-size: $font-size-lg;
     // @include fluid-size("h5"); // no longer needed – fluid handles scaling
-  }
-
-  .footer {
-    &__container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: $spacing-md;
-    }
-
-    &__branding {
-      text-align: center;
-    }
-
-    &__nav {
-      text-align: center;
-    }
-
-    &__menu {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: $spacing-sm;
-
-      li {
-        margin-bottom: 0;
-      }
-    }
   }
 }

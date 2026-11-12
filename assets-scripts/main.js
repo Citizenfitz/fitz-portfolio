@@ -1,6 +1,6 @@
 // Mobile menu toggle
-const navToggle = document.querySelector(".nav-toggle");
-const navMenu = document.querySelector(".nav-menu");
+const navToggle = document.querySelector(".nav-main__toggle");
+const navMenu = document.querySelector(".nav-main__menu");
 
 navToggle.addEventListener("click", () => {
   navMenu.classList.toggle("is-active");

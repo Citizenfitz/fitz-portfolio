@@ -1,0 +1,16 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.dropcap {
+  color: $color-primary;
+  text-transform: uppercase;
+  &__letter {
+    // font-size: 4em;
+    @include fluid-size("giant");
+    line-height: 1em;
+    font-family: $font-header;
+    float: left;
+    // margin-right: 0.1em;
+    @include fluid-space("xs", margin-right);
+  }
+}

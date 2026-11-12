@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "mixins" as *;
+
 .hero {
   width: 100%;
   background-color: $color-bg-header;
@@ -11,7 +14,7 @@
   @include fluid-space("lg", margin-bottom);
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
-    url("img/cf-hero.webp");
+    url("assets-img/cf-hero.webp");
   background-size: cover;
   background-position: center;
   border-bottom: 2px solid $color-text-accent;
@@ -49,7 +52,7 @@
 //   background-color: $color-accent-dark;
 //   border-color: $color-accent-light;
 //   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
-//     url("img/cf-hero.png");
+//     url("assets-img/cf-hero.png");
 //   background-size: cover;
 //   background-position: center;
 //   min-height: 80vh;

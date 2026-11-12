@@ -1,0 +1,47 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.main-content {
+  @include theme-main;
+  @include fluid-space("sm", padding-top);
+
+  &__section {
+    // padding: 1em $spacing-lg;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    @include fluid-space("giant", padding-left);
+    @include fluid-space("giant", padding-right);
+    @media (max-width: $breakpoint-md) {
+      // padding: 1em $spacing-md-alt;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      @include fluid-space("xxl", padding-left);
+      @include fluid-space("xxl", padding-right);
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      // padding: 1em $spacing-sm-alt;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      @include fluid-space("lg", padding-left);
+      @include fluid-space("lg", padding-right);
+    }
+  }
+  &__section--alt,
+  &__section--alt-2 {
+    background: $color-primary-super-light;
+    // padding-top: 3rem;
+    // padding-bottom: 3rem;
+    @include fluid-space("xxl", padding-top);
+    @include fluid-space("xxl", padding-bottom);
+  }
+
+  &__section--alt-2 {
+    background: $color-secondary-light;
+  }
+}
+
+.section-inner {
+  max-width: $container-blog;
+  margin: 0 auto;
+}

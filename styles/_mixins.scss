@@ -1,3 +1,24 @@
+@use "variables" as *;
+
+@mixin fluid-size($level) {
+  @if map-has-key($fluid-sizes, $level) {
+    font-size: map-get($fluid-sizes, $level);
+  } @else {
+    @warn "No fluid size defined for #{$level}. Using fallback.";
+    font-size: 1rem; // or throw error if preferred
+  }
+}
+
+// Mixin to apply fluid spacing
+@mixin fluid-space($level, $property: margin) {
+  @if map-has-key($fluid-spacings, $level) {
+    #{$property}: map-get($fluid-spacings, $level);
+  } @else {
+    @warn "Undefined spacing level: #{$level}. Using 'md' fallback.";
+    #{$property}: map-get($fluid-spacings, "medium");
+  }
+}
+
 @mixin theme-header-footer {
   color: $color-text-light;
   background: linear-gradient(

@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "mixins" as *;
+
 // Portfolio Items
 .portfolio {
   &__section {
@@ -89,4 +92,8 @@
       // @include fluid-size("sm"); // no longer needed – fluid handles scaling
     }
   }
+}
+
+.resume-download {
+  // text-align: center;
 }
