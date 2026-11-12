@@ -9,22 +9,31 @@
 Personal portfolio for Michael "Fitz" Fitzgerald, live at citizenfitz.com.
 This is a revamp: the site must reflect his current work and focus, not his 2013–2024 agency years alone.
 
-- Stack: ▲ (e.g. static HTML/CSS/JS, or React + TypeScript via Vite)
-- Hosting / deploy: ▲ (e.g. Netlify, Cloudflare Pages, GitHub Pages)
+- Stack: hand-coded static HTML, CSS (currently compiled from Sass in `styles/`), vanilla JS in `js/`
+- Hosting / deploy: Bluehost (Apache shared hosting). Redirects go in `.htaccess` in the site root. Append to the existing `.htaccess`; never overwrite or reorder Bluehost's own rules. Fitz uploads; Claude never deploys.
 - Repo: github.com/Citizenfitz/▲
 
 ## Commands
 
-- Dev server: ▲
-- Build: ▲
-- Lint / test: ▲
-- Accessibility check: ▲ (e.g. `npx @axe-core/cli http://localhost:5173`)
+- Dev server: ▲ (e.g. `npx serve .`)
+- Build: ▲ (Sass compile command, if Sass is kept)
+- Accessibility check: ▲ (e.g. `npx @axe-core/cli http://localhost:3000`)
+
+## Migration to the new conventions (one-time)
+
+The old site predates the conventions. Use the refactor-site skill; it holds the process, the rules, and the done criteria. Project specifics only:
+
+- Expected folder moves: `img/` → `assets-img/`, `js/` → `assets-scripts/`, `fonts/` → `assets-fonts/`. Asset file names never change, including the resume PDFs.
+- The CSS may be rewritten to the new conventions, as long as the site looks identical.
+- Edit the Sass/CSS source, never a compiled file. Delete `styles.css.map` and any compiled CSS that no longer has a source. Sass stays; partials follow the Sass section of the conventions.
+- Leave `backups/` alone: don't rename, edit or read it.
 
 ## Audience and positioning
 
 Primary readers: hiring managers and recruiters for AI design engineer / AI solutions roles, and govcon digital services shops (Ad Hoc, Nava, Coforma, Guidehouse Digital and the like).
 
 The story, in order of weight:
+
 1. AI design engineer: builds AI-assisted tools with React/TypeScript, authors Claude skills and CLAUDE.md files, evaluates output with benchmarks.
 2. Accessibility-first UX/UI engineer: Section 508 / WCAG, 20+ years, federal modernization (CPSC, HRSA).
 3. Product designer and maker: FitzaCo and QuoDrox, physical products designed and shipped end to end.
@@ -50,15 +59,9 @@ Featured work: ▲ (candidates: FitzaCo Opportunity Evaluator, QuoDrox store and
 
 ## Code conventions
 
-- Naming runs general to specific: `buttonModalRed`, `.button-modal--red`, never `redModalButton`.
-- JS/TS variables camelCase; CSS selectors BEM in kebab case, following the same general-to-specific rule.
-- Booleans use the `is` prefix (`isOpen`, `isLoaded`).
-- Major sections divided by banner comments:
-  - HTML: `<!-- ********** HEADER ********** -->`
-  - CSS: `/* ********** MEDIA QUERIES ********** */`
-- Files flat, kebab case, general to specific (`work.html`, `work-cpsc.html`), so an alphabetical listing reads as a rough site map.
-- Assets live in `assets-img/`, `assets-scripts/`, `assets-fonts/`, `assets-media/`.
-- Mobile-first CSS.
+@~/.claude/skills/refactor-site/references/conventions.md
+
+Project exceptions: none.
 
 ## Design
 
@@ -70,5 +73,5 @@ Featured work: ▲ (candidates: FitzaCo Opportunity Evaluator, QuoDrox store and
 - Plan before building. For any change touching more than one file, propose the plan and wait for approval.
 - Work one page or section at a time. Stop after each and summarize what changed.
 - Do not deploy, push, or touch DNS or hosting settings. Fitz does those himself.
-- Do not delete files from the old site; move retired pages to `archive/` instead.
+- Do not delete old pages; move retired pages to `archive/` instead. (Exception: obsolete compiled CSS and map files, per the migration section.)
 - Commit messages: short imperative summary line, e.g. `Add CPSC case study page`.
